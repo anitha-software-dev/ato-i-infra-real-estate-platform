@@ -41,6 +41,17 @@ def auto_bootstrap():
             print(f"[WSGI] Created initial Super Admin account: {email}")
         else:
             print("[WSGI] Admin account verified.")
+
+        # Load seed data if Property table is empty
+        from api.models import Property
+        if Property.objects.count() == 0:
+            fixture_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'seed_data.json')
+            if os.path.exists(fixture_path):
+                try:
+                    call_command('loaddata', fixture_path)
+                    print("[WSGI] Successfully loaded initial dataset from seed_data.json!")
+                except Exception as seed_err:
+                    print(f"[WSGI Seed Notice] {seed_err}")
     except Exception as e:
         print(f"[WSGI Startup Notice] {e}")
     finally:

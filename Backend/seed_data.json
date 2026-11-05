@@ -1,0 +1,3158 @@
+[
+{
+  "model": "api.user",
+  "pk": "25f4c73f-7694-4b55-a390-26c2c71f201f",
+  "fields": {
+    "name": "Alex",
+    "email": "alex@gmail.com",
+    "passwordHash": "$2b$10$.Ibb/YBD3JQKbgWNPkK/3umgqx50EISWUZ83w.pLHJq7FXOmoEnxi",
+    "role": "USER",
+    "status": "Active",
+    "phone": "",
+    "lastLoginAt": "2026-09-25T15:04:57.228",
+    "createdAt": "2026-09-25T15:04:22.136",
+    "updatedAt": "2026-10-30T14:18:27.932"
+  }
+},
+{
+  "model": "api.user",
+  "pk": "95168cb3-2114-4200-8f06-53000c22b807",
+  "fields": {
+    "name": "Super Admin",
+    "email": "admin@atoi.com",
+    "passwordHash": "$2b$10$FEtjkeIBHHGo7r4Q/zEJTui1WS9pfYPG13QlDu/9IEWw76iFkutam",
+    "role": "ADMIN",
+    "status": "Active",
+    "phone": null,
+    "lastLoginAt": "2026-11-04T07:41:13.249",
+    "createdAt": "2026-08-07T16:33:39.501",
+    "updatedAt": "2026-11-02T14:34:00.637"
+  }
+},
+{
+  "model": "api.user",
+  "pk": "c1582a38-36cb-43a4-8d62-284b58377ad4",
+  "fields": {
+    "name": "New Admin",
+    "email": "newadmin_test@atoiinfra.com",
+    "passwordHash": "$2b$10$j3vJvQ2vPBnuuRZ85CP0BeXWzgYliL..RN3wQ0TVl8jpZa9kTh1fS",
+    "role": "ADMIN",
+    "status": "Active",
+    "phone": null,
+    "lastLoginAt": "2026-09-25T14:26:32.576",
+    "createdAt": "2026-09-25T12:03:15.882",
+    "updatedAt": "2026-09-25T14:26:32.577"
+  }
+},
+{
+  "model": "api.user",
+  "pk": "c1d82202-16df-40af-92eb-516d89d04e1e",
+  "fields": {
+    "name": "Sam",
+    "email": "sam@gmail.com",
+    "passwordHash": "$2b$10$mqEEkFwez2RQcSme8Qvore2YUCpoOAHa05DAj8BO35qncZgOGBLY.",
+    "role": "USER",
+    "status": "Active",
+    "phone": "",
+    "lastLoginAt": "2026-11-05T10:43:13.472",
+    "createdAt": "2026-09-25T15:10:33.782",
+    "updatedAt": "2026-11-02T14:35:24.628"
+  }
+},
+{
+  "model": "api.developer",
+  "pk": "039ac542-51d2-4e7d-9478-dbf300c4204a",
+  "fields": {
+    "name": "Lodha Group",
+    "slug": "lodha-group",
+    "tagline": "Building Dreams",
+    "about": "Leading real estate developer.",
+    "foundedYear": 2000,
+    "hqCity": "Chennai",
+    "operatingCities": "[\"Bangalore\", \"Chennai\"]",
+    "experienceYears": 45,
+    "completedProjects": 300,
+    "ongoingProjects": 2,
+    "totalUnits": 500,
+    "rating": 4.5,
+    "reviewCount": 2000,
+    "logoUrl": "https://images.unsplash.com/photo-1572021335469-31706a17aaef?w=200&h=200&fit=crop",
+    "coverImageUrl": "https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=1200&h=400&fit=crop",
+    "awards": "[]",
+    "status": "Active",
+    "createdAt": "2026-08-11T14:00:12.847",
+    "updatedAt": "2026-10-30T08:32:17.302"
+  }
+},
+{
+  "model": "api.developer",
+  "pk": "46be6e2b-8c08-48f7-85d2-1826e0d89116",
+  "fields": {
+    "name": "Sobha Limited",
+    "slug": "sobha-limited",
+    "tagline": "Building Dreams",
+    "about": "Leading real estate developer.",
+    "foundedYear": 2000,
+    "hqCity": "Bangalore",
+    "operatingCities": "[\"Noida\", \"Bangalore\"]",
+    "experienceYears": 28,
+    "completedProjects": 160,
+    "ongoingProjects": 2,
+    "totalUnits": 500,
+    "rating": 4.7,
+    "reviewCount": 950,
+    "logoUrl": "https://images.unsplash.com/photo-1554469384-e58fac16e23a?w=200&h=200&fit=crop",
+    "coverImageUrl": "https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?w=1200&h=400&fit=crop",
+    "awards": "[]",
+    "status": "Active",
+    "createdAt": "2026-08-11T14:00:12.847",
+    "updatedAt": "2026-09-15T13:24:38.808"
+  }
+},
+{
+  "model": "api.developer",
+  "pk": "4a3bcf44-7b72-4cbc-9db6-e19976539143",
+  "fields": {
+    "name": "Prestige Group",
+    "slug": "prestige-group",
+    "tagline": "Building Dreams",
+    "about": "Leading real estate developer.",
+    "foundedYear": 2000,
+    "hqCity": "Greater Noida",
+    "operatingCities": "[\"Noida\", \"Greater Noida\"]",
+    "experienceYears": 37,
+    "completedProjects": 250,
+    "ongoingProjects": 2,
+    "totalUnits": 500,
+    "rating": 4.8,
+    "reviewCount": 1200,
+    "logoUrl": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=200&h=200&fit=crop",
+    "coverImageUrl": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&h=400&fit=crop",
+    "awards": "[]",
+    "status": "Active",
+    "createdAt": "2026-08-11T14:00:12.847",
+    "updatedAt": "2026-10-30T08:30:47.398"
+  }
+},
+{
+  "model": "api.developer",
+  "pk": "7866426e-4608-4b48-85c9-1a3d4f6f21b8",
+  "fields": {
+    "name": "Brigade Group",
+    "slug": "brigade-group",
+    "tagline": "Building Dreams",
+    "about": "Leading real estate developer.",
+    "foundedYear": 2000,
+    "hqCity": "Gurugram",
+    "operatingCities": "[\"Gurugram\"]",
+    "experienceYears": 35,
+    "completedProjects": 200,
+    "ongoingProjects": 2,
+    "totalUnits": 500,
+    "rating": 4.6,
+    "reviewCount": 880,
+    "logoUrl": "https://images.unsplash.com/photo-1481277542470-605612bd2d61?w=200&h=200&fit=crop",
+    "coverImageUrl": "https://images.unsplash.com/photo-1448630360428-65456885c650?w=1200&h=400&fit=crop",
+    "awards": "[]",
+    "status": "Active",
+    "createdAt": "2026-08-11T14:00:12.847",
+    "updatedAt": "2026-10-30T08:31:41.628"
+  }
+},
+{
+  "model": "api.developer",
+  "pk": "9655782a-33a4-41e6-881e-a70696a47308",
+  "fields": {
+    "name": "Godrej Properties",
+    "slug": "godrej-properties",
+    "tagline": "Building Dreams",
+    "about": "Leading real estate developer.",
+    "foundedYear": 2000,
+    "hqCity": "Mumbai",
+    "operatingCities": "[\"Gurugram\", \"Delhi NCR\"]",
+    "experienceYears": 33,
+    "completedProjects": 180,
+    "ongoingProjects": 2,
+    "totalUnits": 500,
+    "rating": 4.9,
+    "reviewCount": 1000,
+    "logoUrl": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=200&h=200&fit=crop",
+    "coverImageUrl": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&h=400&fit=crop",
+    "awards": "[]",
+    "status": "Active",
+    "createdAt": "2026-08-11T14:00:12.847",
+    "updatedAt": "2026-10-13T13:42:25.814"
+  }
+},
+{
+  "model": "api.property",
+  "pk": "1b63c1c3-768d-4460-aa26-b714cee69c88",
+  "fields": {
+    "name": "Prestige Falcon City",
+    "slug": "prestige-falcon-city",
+    "developerId": "039ac542-51d2-4e7d-9478-dbf300c4204a",
+    "type": "Luxury",
+    "city": "Bangalore",
+    "location": "Kanakapura Road",
+    "priceRange": "1.5 Cr",
+    "areaRangeSqFt": "1000 - 2000",
+    "configurations": "[\"2 BHK\", \"3 BHK\", \"4 BHK\"]",
+    "amenities": "[\"Security\", \"Parking\"]",
+    "highlights": "[\"Great Location\"]",
+    "status": "Ready_to_Move",
+    "description": "A wonderful property for you.",
+    "coverImage": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&h=600&fit=crop",
+    "galleryImages": "[]",
+    "createdAt": "2026-08-11T14:00:13.132",
+    "updatedAt": "2026-11-04T17:18:42.998"
+  }
+},
+{
+  "model": "api.property",
+  "pk": "5b20cfb1-c16f-4943-8c73-87817e3b40e5",
+  "fields": {
+    "name": "Peenya Industrial Park",
+    "slug": "peenya-industrial-park",
+    "developerId": "4a3bcf44-7b72-4cbc-9db6-e19976539143",
+    "type": "Industries",
+    "city": "Bangalore",
+    "location": "Peenya",
+    "priceRange": "₹50 Lac - 1 Cr",
+    "areaRangeSqFt": "1000 - 2000",
+    "configurations": "[\"Warehouse\", \"Factory Unit\"]",
+    "amenities": "[\"Security\", \"Parking\"]",
+    "highlights": "[\"Great Location\"]",
+    "status": "Under_Construction",
+    "description": "A wonderful property for you.",
+    "coverImage": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&auto=format&fit=crop&q=80",
+    "galleryImages": "[]",
+    "createdAt": "2026-08-11T14:00:13.140",
+    "updatedAt": "2026-11-04T17:18:42.980"
+  }
+},
+{
+  "model": "api.property",
+  "pk": "7208c483-0061-404f-ac94-fb7fdf025c61",
+  "fields": {
+    "name": "Devanahalli Premium Plots",
+    "slug": "devanahalli-premium-plots",
+    "developerId": "46be6e2b-8c08-48f7-85d2-1826e0d89116",
+    "type": "Land",
+    "city": "Bangalore",
+    "location": "Devanahalli",
+    "priceRange": "₹1 Cr - 3 Cr",
+    "areaRangeSqFt": "1000 - 2000",
+    "configurations": "[\"Plot\"]",
+    "amenities": "[\"Security\", \"Parking\"]",
+    "highlights": "[\"Great Location\"]",
+    "status": "New_Launch",
+    "description": "A wonderful property for you.",
+    "coverImage": "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&h=600&fit=crop",
+    "galleryImages": "[]",
+    "createdAt": "2026-08-11T14:00:13.141",
+    "updatedAt": "2026-11-04T17:18:42.907"
+  }
+},
+{
+  "model": "api.property",
+  "pk": "848f9599-15c0-4afe-963e-0ebb41343772",
+  "fields": {
+    "name": "Sobha Dream Acres",
+    "slug": "sobha-dream-acres",
+    "developerId": "46be6e2b-8c08-48f7-85d2-1826e0d89116",
+    "type": "Residential",
+    "city": "Bangalore",
+    "location": "Panathur, Balagere",
+    "priceRange": "₹3 Cr - 5 Cr",
+    "areaRangeSqFt": "1000 - 2000",
+    "configurations": "[\"1 BHK\", \"2 BHK\"]",
+    "amenities": "[\"Security\", \"Parking\"]",
+    "highlights": "[\"Great Location\"]",
+    "status": "New_Launch",
+    "description": "A wonderful property for you.",
+    "coverImage": "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=800&h=600&fit=crop",
+    "galleryImages": "[]",
+    "createdAt": "2026-08-11T14:00:13.132",
+    "updatedAt": "2026-11-04T17:18:42.994"
+  }
+},
+{
+  "model": "api.property",
+  "pk": "ae4741b9-b554-49fa-b391-370c39aef8f8",
+  "fields": {
+    "name": "Brigade Tech Gardens",
+    "slug": "brigade-tech-gardens",
+    "developerId": "7866426e-4608-4b48-85c9-1a3d4f6f21b8",
+    "type": "Commercial",
+    "city": "Bangalore",
+    "location": "Yamuna Expressway",
+    "priceRange": "Lease Only",
+    "areaRangeSqFt": "1000 - 2000",
+    "configurations": "[\"Office Space\"]",
+    "amenities": "[\"Security\", \"Parking\"]",
+    "highlights": "[\"Great Location\"]",
+    "status": "Under_Construction",
+    "description": "A wonderful property for you.",
+    "coverImage": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=600&fit=crop",
+    "galleryImages": "[]",
+    "createdAt": "2026-08-11T14:00:13.132",
+    "updatedAt": "2026-11-04T17:18:42.983"
+  }
+},
+{
+  "model": "api.property",
+  "pk": "b36c5592-f0ed-404c-83d8-df4ef4c2409c",
+  "fields": {
+    "name": "Lodha Park",
+    "slug": "lodha-park",
+    "developerId": "039ac542-51d2-4e7d-9478-dbf300c4204a",
+    "type": "Luxury",
+    "city": "Mumbai",
+    "location": "Worli",
+    "priceRange": "₹1 Cr - 3 Cr",
+    "areaRangeSqFt": "1000 - 2000",
+    "configurations": "[\"2 BHK\", \"3 BHK\", \"4 BHK\", \"5 BHK\"]",
+    "amenities": "[\"Security\", \"Parking\"]",
+    "highlights": "[\"Great Location\"]",
+    "status": "Ready_to_Move",
+    "description": "A wonderful property for you.",
+    "coverImage": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&h=600&fit=crop",
+    "galleryImages": "[]",
+    "createdAt": "2026-08-11T14:00:13.139",
+    "updatedAt": "2026-11-04T17:18:42.991"
+  }
+},
+{
+  "model": "api.property",
+  "pk": "dee41ce2-6f60-4562-855d-c27a0fe8c0a1",
+  "fields": {
+    "name": "Godrej Woods",
+    "slug": "godrej-woods",
+    "developerId": "9655782a-33a4-41e6-881e-a70696a47308",
+    "type": "Luxury",
+    "city": "Noida",
+    "location": "Whitefield",
+    "priceRange": "₹3 Cr - 5 Cr",
+    "areaRangeSqFt": "1000 - 2000",
+    "configurations": "[\"3 BHK\", \"4 BHK\", \"5 BHK\"]",
+    "amenities": "[\"Security\", \"Parking\"]",
+    "highlights": "[\"Great Location\"]",
+    "status": "New_Launch",
+    "description": "A wonderful property for you.",
+    "coverImage": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&h=600&fit=crop",
+    "galleryImages": "[]",
+    "createdAt": "2026-08-11T14:00:13.133",
+    "updatedAt": "2026-11-04T17:18:42.988"
+  }
+},
+{
+  "model": "api.event",
+  "pk": "4d967fe2-0ca6-4f96-aec5-6957d47c91b3",
+  "fields": {
+    "title": "Pune Property Tour",
+    "slug": "pune-property-tour",
+    "tagline": "Join us for this exciting event",
+    "description": "Event description goes here.",
+    "type": "Property_Tour",
+    "status": "Past",
+    "startDate": "2026-09-18T00:00:00",
+    "endDate": "2026-09-18T00:00:00",
+    "time": "10:00 AM - 05:00 PM",
+    "venueName": "Convention Center",
+    "address": "Main Street",
+    "city": "Pune",
+    "mode": "Online",
+    "coverImage": "https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=800&h=600&fit=crop",
+    "galleryImages": "[]",
+    "speakers": [],
+    "highlights": "[]",
+    "registrationLink": null,
+    "attendees": 95,
+    "createdAt": "2026-08-11T14:00:13.206",
+    "updatedAt": "2026-11-04T10:18:40.013"
+  }
+},
+{
+  "model": "api.event",
+  "pk": "5b5ba321-bfaf-4c3a-8654-48e92fd595e3",
+  "fields": {
+    "title": "A to I Infra Mega Expo 2026",
+    "slug": "a-to-i-infra-mega-expo-2026",
+    "tagline": "Join us for this exciting event",
+    "description": "Event description goes here.",
+    "type": "Expo",
+    "status": "Past",
+    "startDate": "2026-10-15T00:00:00",
+    "endDate": "2026-10-15T00:00:00",
+    "time": "10:00 AM - 05:00 PM",
+    "venueName": "Convention Center",
+    "address": "Main Street",
+    "city": "Bangalore",
+    "mode": "In_person",
+    "coverImage": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop",
+    "galleryImages": "[]",
+    "speakers": [],
+    "highlights": "[]",
+    "registrationLink": null,
+    "attendees": 830,
+    "createdAt": "2026-08-11T14:00:13.200",
+    "updatedAt": "2026-11-04T10:18:50.270"
+  }
+},
+{
+  "model": "api.event",
+  "pk": "8817c041-6bda-44f5-9c00-b70db2f52721",
+  "fields": {
+    "title": "NRI Investment Webinar",
+    "slug": "nri-investment-webinar",
+    "tagline": "Join us for this exciting event",
+    "description": "Event description goes here.",
+    "type": "Webinar",
+    "status": "Past",
+    "startDate": "2026-09-05T00:00:00",
+    "endDate": "2026-09-05T00:00:00",
+    "time": "10:00 AM - 05:00 PM",
+    "venueName": "Convention Center",
+    "address": "Main Street",
+    "city": "Noida",
+    "mode": "Online",
+    "coverImage": "https://images.unsplash.com/photo-1551818255-e6e10975bc17?w=800&h=600&fit=crop",
+    "galleryImages": "[]",
+    "speakers": [],
+    "highlights": "[]",
+    "registrationLink": null,
+    "attendees": 520,
+    "createdAt": "2026-08-11T14:00:13.200",
+    "updatedAt": "2026-11-04T10:18:29.061"
+  }
+},
+{
+  "model": "api.event",
+  "pk": "c8a81efd-9d95-48ae-a09b-a2afff9c8cd5",
+  "fields": {
+    "title": "Luxury Property Showcase",
+    "slug": "luxury-property-showcase",
+    "tagline": "Join us for this exciting event",
+    "description": "Event description goes here.",
+    "type": "Seminar",
+    "status": "Upcoming",
+    "startDate": "2026-11-28T00:00:00",
+    "endDate": "2026-11-28T23:59:59",
+    "time": "10:00 AM - 05:00 PM",
+    "venueName": "Convention Center",
+    "address": "Main Street",
+    "city": "Mumbai",
+    "mode": "In_person",
+    "coverImage": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&h=600&fit=crop",
+    "galleryImages": "[]",
+    "speakers": [],
+    "highlights": "[]",
+    "registrationLink": null,
+    "attendees": 240,
+    "createdAt": "2026-08-11T14:00:13.200",
+    "updatedAt": "2026-11-04T10:52:46.377"
+  }
+},
+{
+  "model": "api.event",
+  "pk": "ff0e8238-f1cf-494d-8b2e-4edad5fa9ad3",
+  "fields": {
+    "title": "Commercial Real Estate Trends 2027",
+    "slug": "commercial-real-estate-trends-2027",
+    "tagline": "Join us for this exciting event",
+    "description": "Event description goes here.",
+    "type": "Webinar",
+    "status": "Upcoming",
+    "startDate": "2026-12-21T00:00:00",
+    "endDate": "2026-12-21T23:59:59",
+    "time": "10:00 AM - 05:00 PM",
+    "venueName": "Convention Center",
+    "address": "Main Street",
+    "city": "Global",
+    "mode": "Hybrid",
+    "coverImage": "https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=600&fit=crop",
+    "galleryImages": "[]",
+    "speakers": [],
+    "highlights": "[]",
+    "registrationLink": null,
+    "attendees": 350,
+    "createdAt": "2026-08-11T14:00:13.203",
+    "updatedAt": "2026-11-04T10:52:55.707"
+  }
+},
+{
+  "model": "api.lead",
+  "pk": "0fea535f-780f-46ab-8cf6-5b3aef2dd8dd",
+  "fields": {
+    "name": "Rajesh Sharma (VIP Client)",
+    "email": "rajesh.vip@gmail.com",
+    "phone": "+919811234561",
+    "source": "Free_Consultation",
+    "status": "Converted",
+    "propertyId": "1b63c1c3-768d-4460-aa26-b714cee69c88",
+    "eventId": null,
+    "interest": "Ultra-Luxury 4 BHK Penthouse with Terrace",
+    "purpose": "Buy",
+    "location": "Indiranagar 100ft Road, Bangalore",
+    "budget": "₹ 4.5 Cr - 5.5 Cr",
+    "message": "VIP Client: Site visit successfully completed. Preparing agreement.",
+    "createdAt": "2026-08-13T14:52:33.356",
+    "updatedAt": "2026-10-30T09:12:39.229"
+  }
+},
+{
+  "model": "api.lead",
+  "pk": "198b927c-397b-485e-a78e-64db38b12177",
+  "fields": {
+    "name": "Rahul Chatterjee",
+    "email": "rahul.chatterjee@gmail.com",
+    "phone": "+919811122330",
+    "source": "Property_Enquiry",
+    "status": "New",
+    "propertyId": "5b20cfb1-c16f-4943-8c73-87817e3b40e5",
+    "eventId": null,
+    "interest": "Commercial Food Court Retail Space",
+    "purpose": "Invest",
+    "location": "Sector 62, Noida",
+    "budget": "₹ 65 Lakhs - 85 Lakhs",
+    "message": "Looking for fully fitted food & beverage commercial outlet in prime mall or high-street retail zone.",
+    "createdAt": "2026-09-24T13:32:53.080",
+    "updatedAt": "2026-10-30T09:12:39.221"
+  }
+},
+{
+  "model": "api.lead",
+  "pk": "22eb7ded-a107-42d1-86d5-c0858eb9369a",
+  "fields": {
+    "name": "Vikramaditya Verma",
+    "email": "vikram.verma@outlook.com",
+    "phone": "+919822345672",
+    "source": "Property_Enquiry",
+    "status": "Contacted",
+    "propertyId": "1b63c1c3-768d-4460-aa26-b714cee69c88",
+    "eventId": null,
+    "interest": "Commercial Grade-A Office Space",
+    "purpose": "Rent",
+    "location": "Cyber City, Gurugram",
+    "budget": "₹ 2.5 Lakhs/month",
+    "message": "Need bare-shell commercial space for an IT firm with 80+ workstations. Immediate occupancy preferred.",
+    "createdAt": "2026-08-11T14:00:13.242",
+    "updatedAt": "2026-10-30T09:12:39.141"
+  }
+},
+{
+  "model": "api.lead",
+  "pk": "2fd547e6-8bfe-4874-8833-2d7ddd657409",
+  "fields": {
+    "name": "Rohan Kulkarni",
+    "email": "rohan.kulkarni@rediffmail.com",
+    "phone": "+919866789016",
+    "source": "Event_Registration",
+    "status": "Contacted",
+    "propertyId": null,
+    "eventId": "ff0e8238-f1cf-494d-8b2e-4edad5fa9ad3",
+    "interest": "Co-working Floor Plate (8,000 sq ft)",
+    "purpose": "Rent",
+    "location": "Koregaon Park, Pune",
+    "budget": "₹ 3.8 Lakhs/month",
+    "message": "Need whole floor plate with cafeteria and conference facilities on long-term lease of minimum 5 years.",
+    "createdAt": "2026-08-11T14:00:13.249",
+    "updatedAt": "2026-10-30T09:12:39.187"
+  }
+},
+{
+  "model": "api.lead",
+  "pk": "372e8ae0-913a-4aac-8594-f398d8091620",
+  "fields": {
+    "name": "Deepak Chawla",
+    "email": "deepak.chawla@gmail.com",
+    "phone": "+919799900118",
+    "source": "Contact_Form",
+    "status": "Contacted",
+    "propertyId": "ae4741b9-b554-49fa-b391-370c39aef8f8",
+    "eventId": null,
+    "interest": "Corner Commercial Plot for Hospital/Clinic",
+    "purpose": "Buy",
+    "location": "Satellite, Ahmedabad",
+    "budget": "₹ 7.0 Cr - 9.5 Cr",
+    "message": "Need commercial corner plot on 100 ft main road suitable for diagnostic center or super-specialty clinic.",
+    "createdAt": "2026-09-15T14:05:16.480",
+    "updatedAt": "2026-10-30T09:12:39.217"
+  }
+},
+{
+  "model": "api.lead",
+  "pk": "37e5f4fe-045f-48cc-a959-8e6660ca6c8f",
+  "fields": {
+    "name": "Pooja Deshmukh",
+    "email": "pooja.deshmukh@gmail.com",
+    "phone": "+919899012349",
+    "source": "Manual",
+    "status": "Dropped",
+    "propertyId": "848f9599-15c0-4afe-963e-0ebb41343772",
+    "eventId": null,
+    "interest": "High-Street Retail Showroom",
+    "purpose": "Buy",
+    "location": "Sector 150, Noida",
+    "budget": "₹ 2.0 Cr - 2.8 Cr",
+    "message": "Looking for ground floor retail shop with maximum road frontage in high footfall commercial complex.",
+    "createdAt": "2026-08-11T15:08:22.840",
+    "updatedAt": "2026-10-30T09:12:39.194"
+  }
+},
+{
+  "model": "api.lead",
+  "pk": "786843cd-ef6b-4db6-863c-301d0dd28609",
+  "fields": {
+    "name": "Sunita Rao",
+    "email": "sunita.rao@gmail.com",
+    "phone": "+919766677885",
+    "source": "Event_Registration",
+    "status": "Converted",
+    "propertyId": null,
+    "eventId": "8817c041-6bda-44f5-9c00-b70db2f52721",
+    "interest": "Golf-facing 4 BHK Luxury Apartment",
+    "purpose": "Buy",
+    "location": "Golf Course Road, Gurugram",
+    "budget": "₹ 6.5 Cr - 8.0 Cr",
+    "message": "Need luxury golf-facing residence with state-of-the-art security, EV charging bay, and smart home automation.",
+    "createdAt": "2026-08-14T14:48:51.540",
+    "updatedAt": "2026-10-30T09:12:39.209"
+  }
+},
+{
+  "model": "api.lead",
+  "pk": "7c2d125b-989d-4d6a-8958-3e5c1954b96a",
+  "fields": {
+    "name": "Kavita Menon",
+    "email": "kavita.menon@gmail.com",
+    "phone": "+919788899007",
+    "source": "Website",
+    "status": "New",
+    "propertyId": "ae4741b9-b554-49fa-b391-370c39aef8f8",
+    "eventId": null,
+    "interest": "4 BHK Spanish Style Villa",
+    "purpose": "Buy",
+    "location": "Adyar, Chennai",
+    "budget": "₹ 4.8 Cr - 6.0 Cr",
+    "message": "Interested in premium luxury villa with private plunge pool and landscaped deck. Site visit scheduled for Sunday.",
+    "createdAt": "2026-09-15T14:04:01.503",
+    "updatedAt": "2026-10-30T09:12:39.214"
+  }
+},
+{
+  "model": "api.lead",
+  "pk": "7e94167e-0e1f-4ba7-9bcb-7c401af34b1f",
+  "fields": {
+    "name": "Priya Sundaram",
+    "email": "priya.sundaram@gmail.com",
+    "phone": "+919855678905",
+    "source": "Website",
+    "status": "New",
+    "propertyId": "dee41ce2-6f60-4562-855d-c27a0fe8c0a1",
+    "eventId": null,
+    "interest": "2 BHK Premium Apartment near Metro",
+    "purpose": "Buy",
+    "location": "OMR, Chennai",
+    "budget": "₹ 85 Lakhs - 1.1 Cr",
+    "message": "Looking for residential property close to metro corridor and international schools for family relocation.",
+    "createdAt": "2026-08-11T14:00:13.248",
+    "updatedAt": "2026-10-30T09:12:39.185"
+  }
+},
+{
+  "model": "api.lead",
+  "pk": "82c41b93-874c-46d3-8718-e3e1984b5ebc",
+  "fields": {
+    "name": "Dr. Amitav Ghosh",
+    "email": "dr.amitav.ghosh@yahoo.com",
+    "phone": "+919844567894",
+    "source": "Contact_Form",
+    "status": "Converted",
+    "propertyId": "7208c483-0061-404f-ac94-fb7fdf025c61",
+    "eventId": null,
+    "interest": "Residential Villa Plot (60x40)",
+    "purpose": "Buy",
+    "location": "Jubilee Hills, Hyderabad",
+    "budget": "₹ 1.8 Cr - 2.4 Cr",
+    "message": "Seeking clear-title residential plot with BMRDA/HMDA approval for immediate house construction.",
+    "createdAt": "2026-08-11T14:00:13.246",
+    "updatedAt": "2026-10-30T09:12:39.180"
+  }
+},
+{
+  "model": "api.lead",
+  "pk": "8bda4df1-23eb-402c-ade0-0288d6887124",
+  "fields": {
+    "name": "Tanvi Saxena",
+    "email": "tanvi.saxena@gmail.com",
+    "phone": "+919844455663",
+    "source": "Website",
+    "status": "Qualified",
+    "propertyId": "7208c483-0061-404f-ac94-fb7fdf025c61",
+    "eventId": null,
+    "interest": "Holiday Home / Farmhouse Plot",
+    "purpose": "Buy",
+    "location": "Alibaug, Maharashtra",
+    "budget": "₹ 1.5 Cr - 2.2 Cr",
+    "message": "Seeking peaceful weekend farmhouse plot within 90 minutes drive from Ro-Ro ferry with clubhouse access.",
+    "createdAt": "2026-10-15T14:13:32.967",
+    "updatedAt": "2026-10-30T13:26:26.277"
+  }
+},
+{
+  "model": "api.lead",
+  "pk": "8f92a95b-b1fe-4b0a-b0c4-fbd7810bc1a1",
+  "fields": {
+    "name": "Siddharth Mehra",
+    "email": "siddharth.mehra@gmail.com",
+    "phone": "+919733344552",
+    "source": "Property_Enquiry",
+    "status": "Qualified",
+    "propertyId": "b36c5592-f0ed-404c-83d8-df4ef4c2409c",
+    "eventId": null,
+    "interest": "Lake-facing 3 BHK Condominium",
+    "purpose": "Buy",
+    "location": "Powai, Mumbai",
+    "budget": "₹ 2.8 Cr - 3.4 Cr",
+    "message": "Looking for unhindered lake view apartment with ultra-modern clubhouse amenities and concierge service.",
+    "createdAt": "2026-08-13T14:42:41.809",
+    "updatedAt": "2026-10-30T09:12:39.203"
+  }
+},
+{
+  "model": "api.lead",
+  "pk": "97971ce7-1652-4ac9-8e90-bb9c37dd9d7b",
+  "fields": {
+    "name": "Karthik Iyer",
+    "email": "karthik.iyer@gmail.com",
+    "phone": "+919888901238",
+    "source": "Property_Enquiry",
+    "status": "Converted",
+    "propertyId": "1b63c1c3-768d-4460-aa26-b714cee69c88",
+    "eventId": null,
+    "interest": "Duplex Villa with Private Garden",
+    "purpose": "Buy",
+    "location": "Gachibowli, Hyderabad",
+    "budget": "₹ 3.2 Cr - 4.0 Cr",
+    "message": "Interested in corner villa unit with vastu compliance. Require bank loan assistance through SBI or HDFC.",
+    "createdAt": "2026-08-11T15:06:48.561",
+    "updatedAt": "2026-10-30T09:12:39.192"
+  }
+},
+{
+  "model": "api.lead",
+  "pk": "9df9386a-f1c0-4ce3-9131-172780c170c3",
+  "fields": {
+    "name": "Shweta Bhatt",
+    "email": "shweta.bhatt@gmail.com",
+    "phone": "+919800011229",
+    "source": "Free_Consultation",
+    "status": "Qualified",
+    "propertyId": "b36c5592-f0ed-404c-83d8-df4ef4c2409c",
+    "eventId": null,
+    "interest": "2 BHK Ready-to-Move High-Rise",
+    "purpose": "Buy",
+    "location": "Kalyani Nagar, Pune",
+    "budget": "₹ 90 Lakhs - 1.15 Cr",
+    "message": "Looking for ready-to-move apartment with OC (Occupancy Certificate) received and zero GST liability.",
+    "createdAt": "2026-09-15T14:09:46.646",
+    "updatedAt": "2026-10-30T09:12:39.219"
+  }
+},
+{
+  "model": "api.lead",
+  "pk": "aefd761f-73bd-49b0-92bb-9dc4f1b727d3",
+  "fields": {
+    "name": "Alok Mathur",
+    "email": "alok.mathur@manufacturing.in",
+    "phone": "+91 98200 11223",
+    "source": "Manual",
+    "status": "Contacted",
+    "propertyId": "5b20cfb1-c16f-4943-8c73-87817e3b40e5",
+    "eventId": null,
+    "interest": "Industrial Shed with 3-Phase Power",
+    "purpose": "Buy",
+    "location": "Peenya, Bangalore",
+    "budget": "₹ 3.5 Cr - 5.0 Cr",
+    "message": "Require industrial manufacturing shed with overhead crane provision",
+    "createdAt": "2026-10-15T14:10:57.024",
+    "updatedAt": "2026-11-02T14:36:06.755"
+  }
+},
+{
+  "model": "api.lead",
+  "pk": "c87f7163-7798-4ca4-8d00-7b9bfb4d1df0",
+  "fields": {
+    "name": "Suresh Reddy",
+    "email": "suresh.reddy@gmail.com",
+    "phone": "+919711122330",
+    "source": "Website",
+    "status": "New",
+    "propertyId": "848f9599-15c0-4afe-963e-0ebb41343772",
+    "eventId": null,
+    "interest": "3.5 BHK Smart Home with Clubhouse",
+    "purpose": "Buy",
+    "location": "Yamuna Expressway, Greater Noida",
+    "budget": "₹ 1.4 Cr - 1.8 Cr",
+    "message": "Interested in new launch pre-booking benefits and flexi-payment plans. Please call after 4 PM.",
+    "createdAt": "2026-08-12T14:11:54.379",
+    "updatedAt": "2026-10-30T09:12:39.197"
+  }
+},
+{
+  "model": "api.lead",
+  "pk": "d66578f6-22bf-46d7-8ddd-a5d45584c5f8",
+  "fields": {
+    "name": "Neha Kapoor",
+    "email": "neha.kapoor@gmail.com",
+    "phone": "+919877890127",
+    "source": "Free_Consultation",
+    "status": "Qualified",
+    "propertyId": "dee41ce2-6f60-4562-855d-c27a0fe8c0a1",
+    "eventId": null,
+    "interest": "Studio Apartment for Rental Yield",
+    "purpose": "Invest",
+    "location": "Bandra West, Mumbai",
+    "budget": "₹ 1.2 Cr - 1.6 Cr",
+    "message": "Looking for high rental yield property near business district. Please share historical ROI projections.",
+    "createdAt": "2026-08-11T14:10:27.328",
+    "updatedAt": "2026-10-30T09:12:39.190"
+  }
+},
+{
+  "model": "api.lead",
+  "pk": "e9d4165b-3ccd-4165-bd36-d43a86f4f23e",
+  "fields": {
+    "name": "Rajesh Sharma",
+    "email": "rajesh.sharma@gmail.com",
+    "phone": "+919811234561",
+    "source": "Website",
+    "status": "New",
+    "propertyId": "b36c5592-f0ed-404c-83d8-df4ef4c2409c",
+    "eventId": null,
+    "interest": "Luxury 4 BHK Penthouse",
+    "purpose": "Buy",
+    "location": "Indiranagar, Bangalore",
+    "budget": "₹ 3.5 Cr - 5.5 Cr",
+    "message": "Looking for an east-facing high-floor unit with 2 reserved covered parkings. Would like a site visit this Saturday.",
+    "createdAt": "2026-08-11T14:00:13.242",
+    "updatedAt": "2026-10-30T09:12:39.175"
+  }
+},
+{
+  "model": "api.lead",
+  "pk": "eceff00a-c175-4f9d-ae55-c2dced9ae7b0",
+  "fields": {
+    "name": "Sneha Joshi",
+    "email": "sneha.joshi@gmail.com",
+    "phone": "+919822233441",
+    "source": "Website",
+    "status": "Converted",
+    "propertyId": "1b63c1c3-768d-4460-aa26-b714cee69c88",
+    "eventId": null,
+    "interest": "Ultra-Luxury 5 BHK Sky Villa",
+    "purpose": "Buy",
+    "location": "Worli, Mumbai",
+    "budget": "₹ 11.0 Cr - 15.0 Cr",
+    "message": "Looking for sky villa on top floors with 360-degree skyline views and private elevator access.",
+    "createdAt": "2026-09-25T14:26:20.357",
+    "updatedAt": "2026-10-30T09:12:39.224"
+  }
+},
+{
+  "model": "api.lead",
+  "pk": "f0d1d226-b8d0-4ce2-9460-25ebfd2033d5",
+  "fields": {
+    "name": "Arjun Singhania",
+    "email": "arjun.singhania@gmail.com",
+    "phone": "+919777788996",
+    "source": "Property_Enquiry",
+    "status": "Qualified",
+    "propertyId": "ae4741b9-b554-49fa-b391-370c39aef8f8",
+    "eventId": null,
+    "interest": "Commercial IT Park Managed Office",
+    "purpose": "Invest",
+    "location": "Salt Lake Sector V, Kolkata",
+    "budget": "₹ 8.0 Cr - 12.0 Cr",
+    "message": "Planning institutional investment in Grade-A commercial asset with existing multinational corporate tenant.",
+    "createdAt": "2026-08-17T14:50:28.798",
+    "updatedAt": "2026-10-30T09:12:39.212"
+  }
+},
+{
+  "model": "api.lead",
+  "pk": "f2ebe9b8-4872-4aea-891c-5247c3a6a667",
+  "fields": {
+    "name": "Ananya Sen",
+    "email": "ananya.sen@gmail.com",
+    "phone": "+919833456783",
+    "source": "Free_Consultation",
+    "status": "Qualified",
+    "propertyId": "ae4741b9-b554-49fa-b391-370c39aef8f8",
+    "eventId": null,
+    "interest": "3 BHK Gated Villa",
+    "purpose": "Buy",
+    "location": "Whitefield, Bangalore",
+    "budget": "₹ 2.2 Cr - 2.8 Cr",
+    "message": "Interested in gated community villa with private lawn. Please share floor plans, brochure, and payment schedule.",
+    "createdAt": "2026-08-11T14:00:13.245",
+    "updatedAt": "2026-10-30T09:12:39.177"
+  }
+},
+{
+  "model": "api.lead",
+  "pk": "f45e4a40-74d8-491a-8a4e-4835ee727740",
+  "fields": {
+    "name": "Meera Krishnan",
+    "email": "meera.krishnan@gmail.com",
+    "phone": "+919722233441",
+    "source": "Contact_Form",
+    "status": "Contacted",
+    "propertyId": "5b20cfb1-c16f-4943-8c73-87817e3b40e5",
+    "eventId": null,
+    "interest": "Commercial Warehouse & Logistics Hub",
+    "purpose": "Buy",
+    "location": "Hinjawadi, Pune",
+    "budget": "₹ 5.5 Cr - 7.5 Cr",
+    "message": "Require pre-engineered industrial warehouse near national highway with container truck access.",
+    "createdAt": "2026-08-13T14:24:53.525",
+    "updatedAt": "2026-10-30T09:12:39.200"
+  }
+},
+{
+  "model": "api.lead",
+  "pk": "f482a241-aa2d-4146-ae6c-06fffedd0f56",
+  "fields": {
+    "name": "Manish Agarwal",
+    "email": "manish.agarwal@gmail.com",
+    "phone": "+919755566774",
+    "source": "Free_Consultation",
+    "status": "Contacted",
+    "propertyId": "7208c483-0061-404f-ac94-fb7fdf025c61",
+    "eventId": null,
+    "interest": "Senior Living 2 BHK Apartment",
+    "purpose": "Buy",
+    "location": "Devenahalli, Bangalore",
+    "budget": "₹ 75 Lakhs - 95 Lakhs",
+    "message": "Looking for retirement community home with 24/7 on-campus healthcare support, dining, and wheelchair accessibility.",
+    "createdAt": "2026-08-13T14:56:21.822",
+    "updatedAt": "2026-10-30T09:12:39.207"
+  }
+},
+{
+  "model": "api.career",
+  "pk": "19a4b491-819e-4cfe-8e8e-819b2fd89ea2",
+  "fields": {
+    "title": "Digital Marketing Manager",
+    "slug": "digital-marketing-manager",
+    "department": "Marketing",
+    "location": "Mumbai",
+    "type": "Part_time",
+    "experienceLevel": "4-6 Years",
+    "salaryRange": "₹ 10L - 14L",
+    "isUrgent": false,
+    "description": "We are looking for an experienced professional to join our team.",
+    "responsibilities": "[\"Performance Marketing\", \"SEO strategy\", \"Social Media Management\"]",
+    "requirements": "[\"Proven track record in lead generation\", \"Analytics expertise\"]",
+    "niceToHave": "[\"Agency experience\"]",
+    "benefits": "[\"Flexible hours\", \"Health Insurance\"]",
+    "status": "Open",
+    "postedDate": "2026-09-16T13:17:18.198",
+    "createdAt": "2026-08-11T14:00:13.229",
+    "updatedAt": "2026-10-30T08:10:48.475"
+  }
+},
+{
+  "model": "api.career",
+  "pk": "27d55dc9-c961-4752-847a-3d586baa82c2",
+  "fields": {
+    "title": "Content Writer",
+    "slug": "content-writer",
+    "department": "Marketing",
+    "location": "Remote",
+    "type": "Contract",
+    "experienceLevel": "2-4 Years",
+    "salaryRange": "₹ 4L - 6L",
+    "isUrgent": false,
+    "description": "Write engaging blogs, project descriptions, and newsletter content.",
+    "responsibilities": "[\"Blog writing\", \"Copywriting for ads\", \"Market research\"]",
+    "requirements": "[\"Impeccable English grammar\", \"Portfolio of published work\"]",
+    "niceToHave": "[\"Real estate knowledge\"]",
+    "benefits": "[\"Work from home\"]",
+    "status": "Open",
+    "postedDate": "2026-08-10T00:00:00",
+    "createdAt": "2026-08-11T14:00:13.229",
+    "updatedAt": "2026-08-11T14:00:13.229"
+  }
+},
+{
+  "model": "api.career",
+  "pk": "32967030-633f-44e8-89bf-c72fcd59d210",
+  "fields": {
+    "title": "Real Estate Market Analyst",
+    "slug": "market-research-analyst",
+    "department": "Research",
+    "location": "Mumbai",
+    "type": "Full_time",
+    "experienceLevel": "2-4 Years",
+    "salaryRange": "₹ 6L - 9L",
+    "isUrgent": false,
+    "description": "Analyze metro property market indices, supply-demand dynamics, and emerging micro-market investment corridors.",
+    "responsibilities": "[\"Track quarterly price movements, absorption rates, and rental yields\", \"Publish comprehensive market intelligence reports and investment guides\", \"Support property advisory teams with data-backed investment models\"]",
+    "requirements": "[\"Degree in Economics, Statistics, Real Estate, or Finance\", \"Strong analytical skills with advanced Excel and data modeling expertise\", \"Ability to translate complex market data into actionable client insights\"]",
+    "niceToHave": "[\"Familiarity with Power BI, Tableau, or spatial mapping tools\"]",
+    "benefits": "[\"Hybrid Work Environment\", \"Health Insurance\", \"Research Publishing Credits\"]",
+    "status": "Open",
+    "postedDate": "2026-09-17T12:00:00",
+    "createdAt": "2026-09-21T08:56:57.248",
+    "updatedAt": "2026-09-21T08:56:57.248"
+  }
+},
+{
+  "model": "api.career",
+  "pk": "5db22c97-b9a7-4bcd-8130-76b7fe53039c",
+  "fields": {
+    "title": "Full Stack Developer",
+    "slug": "full-stack-developer-noida",
+    "department": "Technology",
+    "location": "Bangalore",
+    "type": "Full_time",
+    "experienceLevel": "3-5 Years",
+    "salaryRange": "₹ 10L - 16L",
+    "isUrgent": true,
+    "description": "Build and scale modern web applications, property discovery portals, and internal CRM tools for A to I Infra.",
+    "responsibilities": "[\"Develop high-performance frontends using Next.js, React, and TypeScript\", \"Build resilient REST APIs and microservices using Node.js and Prisma\", \"Collaborate with product designers to create seamless user journeys\"]",
+    "requirements": "[\"Proficiency with TypeScript, React/Next.js, Node.js, and PostgreSQL\", \"Strong understanding of web performance, SEO, and responsive design\", \"Experience deploying on cloud platforms (AWS, Vercel)\"]",
+    "niceToHave": "[\"Experience with real estate tech platforms or map APIs\"]",
+    "benefits": "[\"Hybrid Work Option\", \"Health & Wellness Insurance\", \"Tech Gadget Allowance\"]",
+    "status": "Open",
+    "postedDate": "2026-09-18T10:00:00",
+    "createdAt": "2026-09-21T08:56:57.203",
+    "updatedAt": "2026-09-21T08:56:57.203"
+  }
+},
+{
+  "model": "api.career",
+  "pk": "70e4b57d-a6e7-4d1d-9dcf-e354c1244469",
+  "fields": {
+    "title": "Senior Property Consultant",
+    "slug": "senior-property-consultant",
+    "department": "Sales",
+    "location": "Greater Noida",
+    "type": "Contract",
+    "experienceLevel": "5-8 Years",
+    "salaryRange": "₹ 8L - 15L + Incentives",
+    "isUrgent": true,
+    "description": "We are looking for an experienced professional to join our team.",
+    "responsibilities": "[\"Client acquisition\", \"Site visits\", \"Negotiation & Deal Closure\"]",
+    "requirements": "[\"Excellent communication\", \"Real estate background\", \"Target oriented\"]",
+    "niceToHave": "[\"RERA Certification\", \"Multilingual\"]",
+    "benefits": "[\"Health Insurance\", \"Performance Bonus\"]",
+    "status": "Open",
+    "postedDate": "2026-09-02T14:17:57.363",
+    "createdAt": "2026-08-11T14:00:13.229",
+    "updatedAt": "2026-09-02T14:17:57.468"
+  }
+},
+{
+  "model": "api.career",
+  "pk": "99c630d5-6c11-440e-b5fe-1a7d32491378",
+  "fields": {
+    "title": "Talent Acquisition Specialist",
+    "slug": "talent-acquisition-specialist",
+    "department": "HR",
+    "location": "Noida",
+    "type": "Full_time",
+    "experienceLevel": "2-5 Years",
+    "salaryRange": "₹ 5L - 8L",
+    "isUrgent": false,
+    "description": "Drive talent acquisition initiatives across sales, advisory, technology, and marketing to build high-performing teams.",
+    "responsibilities": "[\"Manage end-to-end recruitment cycle from sourcing to final offer rollout\", \"Build talent pipelines for luxury property advisors and technical roles\", \"Coordinate structured onboarding and employee engagement programs\"]",
+    "requirements": "[\"Proven recruitment experience in real estate, consulting, or corporate tech\", \"Excellent communication and candidate evaluation skills\", \"Familiarity with job portals, LinkedIn Recruiter, and ATS tools\"]",
+    "niceToHave": "[\"Knowledge of incentive structures in real estate sales\"]",
+    "benefits": "[\"Health Coverage\", \"Quarterly Hiring Incentives\", \"Friendly Work Culture\"]",
+    "status": "Open",
+    "postedDate": "2026-09-16T11:00:00",
+    "createdAt": "2026-09-21T08:56:57.211",
+    "updatedAt": "2026-09-21T08:56:57.211"
+  }
+},
+{
+  "model": "api.career",
+  "pk": "a8d87fdb-51f8-47ca-b12b-5afd200687aa",
+  "fields": {
+    "title": "CRM Specialist",
+    "slug": "crm-specialist",
+    "department": "Sales",
+    "location": "Bangalore",
+    "type": "Full_time",
+    "experienceLevel": "3-5 Years",
+    "salaryRange": "₹ 6L - 9L",
+    "isUrgent": true,
+    "description": "We are looking for an experienced professional to join our team.",
+    "responsibilities": "[\"Client onboarding\", \"Query resolution\", \"CRM maintenance\"]",
+    "requirements": "[\"Customer service experience\", \"Tech-savvy\"]",
+    "niceToHave": "[\"Salesforce experience\"]",
+    "benefits": "[\"Health Insurance\", \"Annual offsite\"]",
+    "status": "Open",
+    "postedDate": "2026-09-23T11:13:33.794",
+    "createdAt": "2026-08-11T14:00:13.232",
+    "updatedAt": "2026-09-23T11:23:26.840"
+  }
+},
+{
+  "model": "api.career",
+  "pk": "aaced7cd-88d0-4aa9-b8c2-a7413aad1155",
+  "fields": {
+    "title": "Finance Executive",
+    "slug": "finance-executive-pune",
+    "department": "Finance",
+    "location": "Pune",
+    "type": "Full_time",
+    "experienceLevel": "1-3 Years",
+    "salaryRange": "₹ 3L - 5L",
+    "isUrgent": false,
+    "description": "Handle daily accounting and invoicing operations.",
+    "responsibilities": "[\"Invoice processing\", \"Bank reconciliation\", \"Tally data entry\"]",
+    "requirements": "[\"B.Com/M.Com degree\", \"Proficiency in Tally ERP\"]",
+    "niceToHave": "[\"GST knowledge\"]",
+    "benefits": "[\"Paid leaves\"]",
+    "status": "Open",
+    "postedDate": "2026-07-25T00:00:00",
+    "createdAt": "2026-08-11T14:00:13.231",
+    "updatedAt": "2026-08-11T14:00:13.231"
+  }
+},
+{
+  "model": "api.career",
+  "pk": "cc69a1e3-7676-464b-b79b-fd60239408c1",
+  "fields": {
+    "title": "Operations Lead",
+    "slug": "operations-lead-noida",
+    "department": "Operations",
+    "location": "Noida",
+    "type": "Full_time",
+    "experienceLevel": "3-6 Years",
+    "salaryRange": "₹ 6L - 10L",
+    "isUrgent": true,
+    "description": "Oversee day-to-day real estate project operations, customer onboarding workflows, and developer liaisons.",
+    "responsibilities": "[\"Streamline client transaction pipelines and site visit operations\", \"Manage developer documentation and project inventory tracking\", \"Coordinate with sales and legal teams for smooth transaction closures\"]",
+    "requirements": "[\"3+ years of operational experience in real estate or property advisory\", \"Strong process management, leadership, and problem-solving abilities\", \"Proficiency in CRM platforms and inventory tools\"]",
+    "niceToHave": "[\"Familiarity with NCR real estate market regulations\"]",
+    "benefits": "[\"Comprehensive Health Insurance\", \"Annual Performance Bonus\", \"Rapid Career Progression\"]",
+    "status": "Open",
+    "postedDate": "2026-09-15T09:00:00",
+    "createdAt": "2026-09-21T08:56:57.157",
+    "updatedAt": "2026-09-21T08:56:57.157"
+  }
+},
+{
+  "model": "api.career",
+  "pk": "cf6c0580-bf20-4cf7-a8a8-45bbdf462f10",
+  "fields": {
+    "title": "Legal & Compliance Counsel",
+    "slug": "legal-compliance-counsel",
+    "department": "Legal",
+    "location": "Delhi NCR",
+    "type": "Full_time",
+    "experienceLevel": "4-7 Years",
+    "salaryRange": "₹ 9L - 14L",
+    "isUrgent": true,
+    "description": "Lead legal due diligence, title verification, RERA compliance, and buyer agreements for real estate portfolios.",
+    "responsibilities": "[\"Conduct title searches and legal verification of partner properties\", \"Draft and review agreements for sale, builder-buyer contracts, and deeds\", \"Ensure regulatory compliance under RERA, municipal bylaws, and FEMA\"]",
+    "requirements": "[\"LLB or LLM degree with active Bar Council registration\", \"4+ years of practical experience in real estate and property law\", \"Deep understanding of title verification, conveyance, and registration\"]",
+    "niceToHave": "[\"Experience handling RERA authority filings and disputes\"]",
+    "benefits": "[\"Corporate Legal Insurance\", \"Bar Association Dues Paid\", \"Executive Bonus\"]",
+    "status": "Open",
+    "postedDate": "2026-09-14T09:30:00",
+    "createdAt": "2026-09-21T08:56:57.233",
+    "updatedAt": "2026-09-21T08:56:57.233"
+  }
+},
+{
+  "model": "api.jobapplication",
+  "pk": "189492b9-e604-4809-a411-4c5bda9fc0ab",
+  "fields": {
+    "careerId": "70e4b57d-a6e7-4d1d-9dcf-e354c1244469",
+    "name": "John Doe",
+    "email": "johndoe@example.com",
+    "phone": "9876543210",
+    "linkedin": "https://linkedin.com/in/johndoe",
+    "resumeUrl": "http://127.0.0.1:5000/uploads/resume-1789388938688-422404778-john_doe_resume.pdf",
+    "coverNote": "Excited to apply for this position!",
+    "status": "Reviewing",
+    "createdAt": "2026-09-14T12:28:58.723",
+    "updatedAt": "2026-09-14T12:46:56.313"
+  }
+},
+{
+  "model": "api.jobapplication",
+  "pk": "2869890b-a4f9-47d2-a8e7-cd2a2c54a396",
+  "fields": {
+    "careerId": "19a4b491-819e-4cfe-8e8e-819b2fd89ea2",
+    "name": "Kevin",
+    "email": "kevin@gmail.com",
+    "phone": "9512365874",
+    "linkedin": null,
+    "resumeUrl": "http://127.0.0.1:5000/uploads/resume-1789390335976-976793373-COMMITTED_TO_PHARMACEUTICAL_EXCELLENCE.docx",
+    "coverNote": null,
+    "status": "Pending",
+    "createdAt": "2026-09-14T12:52:16.122",
+    "updatedAt": "2026-09-14T13:01:56.794"
+  }
+},
+{
+  "model": "api.jobapplication",
+  "pk": "eb1dcf40-7fa4-42d7-a33d-b048b21a3358",
+  "fields": {
+    "careerId": "32967030-633f-44e8-89bf-c72fcd59d210",
+    "name": "Harish",
+    "email": "harsha@gmail.com",
+    "phone": "9876544310",
+    "linkedin": null,
+    "resumeUrl": "http://127.0.0.1:5000/uploads/resume-1790163368707-177386661-Cinepotter_-_Tag_Implementations.docx",
+    "coverNote": null,
+    "status": "Hired",
+    "createdAt": "2026-09-23T11:36:08.792",
+    "updatedAt": "2026-10-30T14:01:28.094"
+  }
+},
+{
+  "model": "api.content",
+  "pk": "521fb783-af8e-467e-91ee-6765763fa306",
+  "fields": {
+    "title": "NRI Guide to Buying Property in India",
+    "slug": "nri-property-buying-guide",
+    "content": "Full article content goes here...",
+    "excerpt": "Everything an NRI needs to know before investing in Indian real estate.",
+    "category": "Legal",
+    "readTime": "15 min",
+    "featuredImage": "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&h=600&fit=crop",
+    "type": "News",
+    "author": "Suresh Patil",
+    "status": "Published",
+    "publishDate": "2026-08-14T14:43:35.297",
+    "views": 3100,
+    "createdAt": "2026-08-11T14:00:13.222",
+    "updatedAt": "2026-10-30T08:10:55.063"
+  }
+},
+{
+  "model": "api.content",
+  "pk": "9162fbeb-d39d-4bc0-9131-48b816bfb481",
+  "fields": {
+    "title": "A to I Infra Wins Best Consulting Firm 2026",
+    "slug": "atoi-wins-best-consulting-firm-2026",
+    "content": "Full article content goes here...",
+    "excerpt": "Celebrating our latest milestone and recognition in the industry.",
+    "category": "Awards",
+    "readTime": "7 min",
+    "featuredImage": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=800&h=600&fit=crop",
+    "type": "News",
+    "author": "PR Team",
+    "status": "Published",
+    "publishDate": "2026-09-15T13:27:09.498",
+    "views": 2400,
+    "createdAt": "2026-08-11T14:00:13.216",
+    "updatedAt": "2026-09-15T13:27:09.633"
+  }
+},
+{
+  "model": "api.content",
+  "pk": "9522a9b2-874f-47e5-892b-27f32ba453fc",
+  "fields": {
+    "title": "How Repo Rate Changes Impact Home Loans",
+    "slug": "repo-rate-impact-home-loans",
+    "content": "Full article content goes here...",
+    "excerpt": "A simple guide to understanding the RBI repo rate and your EMI.",
+    "category": "Finance",
+    "readTime": "20 min+",
+    "featuredImage": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&h=600&fit=crop",
+    "type": "News",
+    "author": "Anita Desai",
+    "status": "Published",
+    "publishDate": "2026-09-02T14:19:04.271",
+    "views": 890,
+    "createdAt": "2026-08-11T14:00:13.216",
+    "updatedAt": "2026-09-02T14:19:04.358"
+  }
+},
+{
+  "model": "api.content",
+  "pk": "98ee0b71-4d08-4cd8-b6a0-76baef510479",
+  "fields": {
+    "title": "Top 5 Investment Hubs in Bangalore for 2026",
+    "slug": "top-5-emerging-micro-markets-bangalore",
+    "content": "Full article content goes here...",
+    "excerpt": "Discover the hottest investment zones in the Silicon Valley of India.",
+    "category": "Market",
+    "readTime": "10 min",
+    "featuredImage": "https://images.unsplash.com/photo-1596401057633-54a8fe8ef647?w=800&h=600&fit=crop",
+    "type": "Blog",
+    "author": "Ravi Kumar",
+    "status": "Published",
+    "publishDate": "2026-09-02T14:29:59.073",
+    "views": 1250,
+    "createdAt": "2026-08-11T14:00:13.216",
+    "updatedAt": "2026-09-02T14:29:59.218"
+  }
+},
+{
+  "model": "api.content",
+  "pk": "99788b0c-a85f-4b07-9b21-f7773a3c48e3",
+  "fields": {
+    "title": "The Rise of Co-living Spaces in Urban India",
+    "slug": "rise-of-coliving-spaces",
+    "content": "Full article content goes here...",
+    "excerpt": "Why millennials are choosing co-living over traditional renting.",
+    "category": "Lifestyle",
+    "readTime": "7 min",
+    "featuredImage": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&h=600&fit=crop",
+    "type": "Blog",
+    "author": "Neha Sharma",
+    "status": "Published",
+    "publishDate": "2026-08-14T14:42:47.625",
+    "views": 1560,
+    "createdAt": "2026-08-11T14:00:13.221",
+    "updatedAt": "2026-08-14T14:42:47.713"
+  }
+},
+{
+  "model": "api.otp",
+  "pk": "b3d7f508-249c-46bb-9754-41583998a683",
+  "fields": {
+    "phone": "8870524968",
+    "code": "8037",
+    "expiresAt": "2026-08-13T14:19:12.282",
+    "createdAt": "2026-08-13T14:10:18.634"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "008c91b4-9d7b-4d78-91d6-473b845cdedc",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "LOGIN",
+    "details": "User logged in to Admin Panel",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-13T08:07:01.988"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "0ab1edab-368a-4b3c-ac0a-8de9fcbc10f2",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "LOGIN",
+    "details": "User logged in to Admin Panel",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-30T07:38:30.045"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "0c51461d-9fac-4291-a9db-11a5549da453",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "LOGIN",
+    "details": "User logged in to Admin Panel",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-11-02T14:34:00.641"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "1077297c-b193-4e98-af4d-6d6a86ee2844",
+  "fields": {
+    "userId": null,
+    "userName": "Staff Member",
+    "userEmail": "staff_registered@atoiinfra.com",
+    "action": "REGISTER",
+    "details": "User registered with role USER: Staff Member (staff_registered@atoiinfra.com)",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-30T15:52:54.909"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "17113880-dbb4-4764-aa27-166b7289ba5e",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "UPDATE_USER",
+    "details": "Updated user: Agent Staff Updated (staff_agent_test@atoiinfra.com)",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-11-03T08:34:10.588"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "19c8c8c4-db21-4e72-9eca-0171ed6958b5",
+  "fields": {
+    "userId": null,
+    "userName": "Bootstrap Super Admin",
+    "userEmail": "bootstrap_admin@atoiinfra.com",
+    "action": "REGISTER",
+    "details": "User registered with role ADMIN: Bootstrap Super Admin (bootstrap_admin@atoiinfra.com)",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-11-03T08:32:55.664"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "23cd0e81-8b84-441c-af7d-d8c99ef611f8",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "DELETE_USER",
+    "details": "Deleted user: Agent Staff Updated (staff_agent_test@atoiinfra.com)",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-30T15:54:40.358"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "241220cb-247b-43eb-99ce-34974966c0f8",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "UPDATE_USER",
+    "details": "Updated user: Agent Staff Updated (staff_agent_test@atoiinfra.com)",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-30T15:56:05.423"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "2759ff89-5846-4e9b-b334-1793f9a9d528",
+  "fields": {
+    "userId": "c1d82202-16df-40af-92eb-516d89d04e1e",
+    "userName": "Sam",
+    "userEmail": "sam@gmail.com",
+    "action": "LOGIN",
+    "details": "User logged in to Admin Panel",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-30T14:40:02.087"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "2cbb4816-d1ff-4982-aab1-15a6cc54a333",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "LOGIN",
+    "details": "User logged in to Admin Panel",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-30T15:59:57.747"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "2d64739d-7c9b-4b85-98b6-4a13d95c91c3",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "LOGIN",
+    "details": "User logged in to Admin Panel",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-30T07:43:54.220"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "304877e0-9b37-43ba-952a-51d62f28cf35",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "DELETE_USER",
+    "details": "Deleted user: Agent Staff Updated (staff_agent_test@atoiinfra.com)",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-30T15:53:39.307"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "33fb7506-7261-4fc4-bc7a-eede51fc8bde",
+  "fields": {
+    "userId": null,
+    "userName": "Staff Member",
+    "userEmail": "staff_registered@atoiinfra.com",
+    "action": "REGISTER",
+    "details": "User registered with role USER: Staff Member (staff_registered@atoiinfra.com)",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-11-05T16:13:22.896"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "35b8cb47-2b7c-439d-ad32-47dd7e476dff",
+  "fields": {
+    "userId": null,
+    "userName": "Staff Member",
+    "userEmail": "staff_registered@atoiinfra.com",
+    "action": "REGISTER",
+    "details": "User registered with role USER: Staff Member (staff_registered@atoiinfra.com)",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-11-05T16:44:32.699"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "35d993e5-f0b8-40fa-8f7f-fb06bd164bcd",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "CREATE_USER",
+    "details": "Created new user: Agent Staff (staff_agent_test@atoiinfra.com) with role USER",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-11-03T08:32:55.963"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "378e6ab1-7768-48fd-a961-24a53d868ad8",
+  "fields": {
+    "userId": null,
+    "userName": "Bootstrap Super Admin",
+    "userEmail": "bootstrap_admin@atoiinfra.com",
+    "action": "REGISTER",
+    "details": "User registered with role ADMIN: Bootstrap Super Admin (bootstrap_admin@atoiinfra.com)",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-30T15:56:05.226"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "38cb5422-76a8-4199-a406-f1aae81a08ca",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "LOGIN",
+    "details": "User logged in to Admin Panel",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-30T08:21:03.130"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "3ba6021d-1e0c-4fd5-899b-43319c1d2683",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "LOGIN",
+    "details": "User logged in to Admin Panel",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-30T07:42:08.954"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "3c9d248a-7df3-4f3b-abdb-1cd83f805908",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "DELETE_USER",
+    "details": "Deleted user: Agent Staff Updated (staff_agent_test@atoiinfra.com)",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-30T15:56:05.435"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "404df3ed-cef5-4b4c-b9a1-30e0bf7525b4",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "UPDATE_USER",
+    "details": "Updated user: Agent Staff Updated (staff_agent_test@atoiinfra.com)",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-31T10:25:32.403"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "4370c9d1-11e8-41fb-b8a5-3e595ad2ad61",
+  "fields": {
+    "userId": null,
+    "userName": "Staff Member",
+    "userEmail": "staff_registered@atoiinfra.com",
+    "action": "REGISTER",
+    "details": "User registered with role USER: Staff Member (staff_registered@atoiinfra.com)",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-11-03T08:32:55.412"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "46049150-a9d7-47e2-ae8a-6d4eb688350b",
+  "fields": {
+    "userId": null,
+    "userName": "Bootstrap Super Admin",
+    "userEmail": "bootstrap_admin@atoiinfra.com",
+    "action": "REGISTER",
+    "details": "User registered with role ADMIN: Bootstrap Super Admin (bootstrap_admin@atoiinfra.com)",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-11-05T16:44:33.150"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "4964579c-d9e3-4606-be7b-4100661a6a8f",
+  "fields": {
+    "userId": null,
+    "userName": "Bootstrap Super Admin",
+    "userEmail": "bootstrap_admin@atoiinfra.com",
+    "action": "REGISTER",
+    "details": "User registered with role ADMIN: Bootstrap Super Admin (bootstrap_admin@atoiinfra.com)",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-11-03T08:34:10.288"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "498f2080-92cb-4e47-8336-dbfce59f1205",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "LOGIN",
+    "details": "User logged in to Admin Panel",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-31T10:32:34.810"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "4ab72c3b-3598-41c1-95eb-2684880e34de",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "LOGIN",
+    "details": "User logged in to Admin Panel",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-30T08:51:18.639"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "4bf28abf-79a4-430b-ad68-e735159e2dad",
+  "fields": {
+    "userId": "c1582a38-36cb-43a4-8d62-284b58377ad4",
+    "userName": "New Admin",
+    "userEmail": "newadmin_test@atoiinfra.com",
+    "action": "LOGIN",
+    "details": "User logged in to Admin Panel",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-09-25T14:08:40.659"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "4c0d1ce7-4257-4c99-b084-d157e463ce8f",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "LOGIN",
+    "details": "User logged in to Admin Panel",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-09-28T09:36:33.360"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "4dd7fdf0-a40d-4637-b73c-c9323181b4c5",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "UPDATE_USER",
+    "details": "Updated user: Agent Staff Updated (staff_agent_test@atoiinfra.com)",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-31T10:31:49.007"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "4f424465-3d13-4941-8fbf-d54252c80009",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "DELETE_USER",
+    "details": "Deleted user: Agent Staff Updated (staff_agent_test@atoiinfra.com)",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-31T10:25:32.418"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "4fdaff65-cee8-455e-a8ad-cefa1ee545fc",
+  "fields": {
+    "userId": null,
+    "userName": "Staff Agent",
+    "userEmail": "staff_agent_test@atoiinfra.com",
+    "action": "CREATE_USER",
+    "details": "Created new admin user: Staff Agent (staff_agent_test@atoiinfra.com)",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-30T14:13:45.354"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "509aacc4-c1ac-4103-9f77-bd9d68276cdc",
+  "fields": {
+    "userId": null,
+    "userName": "Staff Member",
+    "userEmail": "staff_registered@atoiinfra.com",
+    "action": "REGISTER",
+    "details": "User registered with role USER: Staff Member (staff_registered@atoiinfra.com)",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-30T15:56:05.069"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "51a0b646-d760-4fa5-965f-e78a9f7d14e0",
+  "fields": {
+    "userId": null,
+    "userName": "Bootstrap Super Admin",
+    "userEmail": "bootstrap_admin@atoiinfra.com",
+    "action": "REGISTER",
+    "details": "User registered with role ADMIN: Bootstrap Super Admin (bootstrap_admin@atoiinfra.com)",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-31T10:26:10.367"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "53425c8c-46e5-492c-9d0d-80db629b2382",
+  "fields": {
+    "userId": null,
+    "userName": "Bootstrap Super Admin",
+    "userEmail": "bootstrap_admin@atoiinfra.com",
+    "action": "REGISTER",
+    "details": "User registered with role ADMIN: Bootstrap Super Admin (bootstrap_admin@atoiinfra.com)",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-31T11:11:36.318"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "55034755-4529-4321-8d15-946225524672",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "LOGIN",
+    "details": "User logged in to Admin Panel",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-11-02T14:17:10.983"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "57de545f-d947-4e4e-bfad-e327cc43f119",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "LOGIN",
+    "details": "User logged in to Admin Panel",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-30T13:37:55.717"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "5af137e9-8129-45dc-8c64-251ef50e6bba",
+  "fields": {
+    "userId": "c1d82202-16df-40af-92eb-516d89d04e1e",
+    "userName": "Sam",
+    "userEmail": "sam@gmail.com",
+    "action": "LOGIN",
+    "details": "User logged in to Admin Panel",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-31T10:33:42.328"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "5b1f256b-87a9-4d63-8927-79149bfa9678",
+  "fields": {
+    "userId": "c1d82202-16df-40af-92eb-516d89d04e1e",
+    "userName": "Sam",
+    "userEmail": "sam@gmail.com",
+    "action": "LOGIN",
+    "details": "User logged in to Admin Panel",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-11-02T05:46:20.825"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "60a1f142-fcb0-43b5-bea7-3fff3e12f9e3",
+  "fields": {
+    "userId": null,
+    "userName": "Staff Member",
+    "userEmail": "staff_registered@atoiinfra.com",
+    "action": "REGISTER",
+    "details": "User registered with role USER: Staff Member (staff_registered@atoiinfra.com)",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-11-03T08:34:10.016"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "66e1edb7-7440-4b59-be65-28a9fd2222ae",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "LOGIN",
+    "details": "User logged in to Admin Panel",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-30T13:10:59.351"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "67af00a0-f946-4a71-b461-59619f32bad1",
+  "fields": {
+    "userId": null,
+    "userName": "Staff Member",
+    "userEmail": "staff_registered@atoiinfra.com",
+    "action": "REGISTER",
+    "details": "User registered with role USER: Staff Member (staff_registered@atoiinfra.com)",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-31T11:11:36.124"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "690f52e2-173a-41c8-9a48-b4046155a4ac",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "CREATE_USER",
+    "details": "Created new user: Agent Staff (staff_agent_test@atoiinfra.com) with role USER",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-11-05T16:13:23.873"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "6a2311c1-e43f-4438-943d-889cb69a2a08",
+  "fields": {
+    "userId": null,
+    "userName": "Bootstrap Super Admin",
+    "userEmail": "bootstrap_admin@atoiinfra.com",
+    "action": "REGISTER",
+    "details": "User registered with role ADMIN: Bootstrap Super Admin (bootstrap_admin@atoiinfra.com)",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-31T10:45:59.960"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "7a964b38-db67-4db0-9de4-d73e0ae3f8fb",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "DELETE_USER",
+    "details": "Deleted user: Agent Staff Updated (staff_agent_test@atoiinfra.com)",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-31T10:31:49.019"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "7b32dcc5-a93d-4b3f-9f4c-8311106cf737",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "CREATE_USER",
+    "details": "Created new user: Agent Staff (staff_agent_test@atoiinfra.com) with role USER",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-31T10:46:00.243"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "7c262911-1cb7-4a37-a52e-9d0bd2dbb3f1",
+  "fields": {
+    "userId": null,
+    "userName": "Staff Member",
+    "userEmail": "staff_registered@atoiinfra.com",
+    "action": "REGISTER",
+    "details": "User registered with role USER: Staff Member (staff_registered@atoiinfra.com)",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-30T15:54:40.001"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "7d7412a8-9605-4e9e-a42a-9473a29f9173",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "LOGIN",
+    "details": "User logged in to Admin Panel",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-11-02T13:46:50.711"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "802e4c09-a909-4435-939c-9ee0f74f324a",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "CREATE_USER",
+    "details": "Created new user: Agent Staff (staff_agent_test@atoiinfra.com) with role USER",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-31T10:26:11.191"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "8a95c487-b658-45be-abfa-80f40b7a3fd3",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "LOGIN",
+    "details": "User logged in to Admin Panel",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-30T13:03:31.319"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "8b8aa00c-0db1-4843-9d47-506e8782e516",
+  "fields": {
+    "userId": null,
+    "userName": "Staff Member",
+    "userEmail": "staff_registered@atoiinfra.com",
+    "action": "REGISTER",
+    "details": "User registered with role USER: Staff Member (staff_registered@atoiinfra.com)",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-31T10:31:48.411"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "8d3c486e-969c-4ec7-85e3-b245fca70333",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "LOGIN",
+    "details": "User logged in to Admin Panel",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-30T14:13:45.020"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "9514f469-faf7-496d-b622-5617202de3c2",
+  "fields": {
+    "userId": "c1d82202-16df-40af-92eb-516d89d04e1e",
+    "userName": "Sam",
+    "userEmail": "sam@gmail.com",
+    "action": "LOGIN",
+    "details": "User logged in to Admin Panel",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-11-05T10:43:13.477"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "97e006e6-fbc1-479c-ac88-3d39017a3bb0",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "LOGIN",
+    "details": "User logged in to Admin Panel",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-30T08:51:39.393"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "992e6be4-7569-4abf-a1b4-9a1f51720a76",
+  "fields": {
+    "userId": "c1582a38-36cb-43a4-8d62-284b58377ad4",
+    "userName": "New Admin",
+    "userEmail": "newadmin_test@atoiinfra.com",
+    "action": "LOGIN",
+    "details": "User logged in to Admin Panel",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-09-25T14:26:32.583"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "9af13872-3c4a-4d31-a0fb-3399270c0908",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "DELETE_USER",
+    "details": "Deleted user: Agent Staff Updated (staff_agent_test@atoiinfra.com)",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-11-05T16:44:36.606"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "9d662c0b-56ea-43a6-978b-f668ee6d2565",
+  "fields": {
+    "userId": "c1d82202-16df-40af-92eb-516d89d04e1e",
+    "userName": "Sam",
+    "userEmail": "sam@gmail.com",
+    "action": "LOGIN",
+    "details": "User logged in to Admin Panel",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-11-02T14:33:13.074"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "9dad3eee-2737-47f1-b7be-c60fb0112d94",
+  "fields": {
+    "userId": null,
+    "userName": "Staff Member",
+    "userEmail": "staff_registered@atoiinfra.com",
+    "action": "REGISTER",
+    "details": "User registered with role USER: Staff Member (staff_registered@atoiinfra.com)",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-31T10:45:59.791"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "9fcd7ef7-45a7-4ac6-b32a-c333cd6a4759",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "LOGIN",
+    "details": "User logged in to Admin Panel",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-30T05:21:55.646"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "a21a0dbf-89fb-4324-b307-1a32225e4d6b",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "UPDATE_USER",
+    "details": "Updated user: Agent Staff Updated (staff_agent_test@atoiinfra.com)",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-11-05T16:13:23.969"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "a32022d5-f317-41a6-bd36-82483404d286",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "CREATE_USER",
+    "details": "Created new user: Agent Staff (staff_agent_test@atoiinfra.com) with role USER",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-11-05T16:44:36.246"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "a51ee8c8-ff12-46f7-a2bb-b5d2865c437b",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "CREATE_USER",
+    "details": "Created new user: Agent Staff (staff_agent_test@atoiinfra.com) with role USER",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-30T15:56:05.411"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "a897a557-d5a9-473e-87be-1a5c109d374b",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "UPDATE_USER",
+    "details": "Updated user: Agent Staff Updated (staff_agent_test@atoiinfra.com)",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-31T10:26:11.267"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "ab8c7f17-866d-4c2d-a3c2-dfdd5540fafa",
+  "fields": {
+    "userId": null,
+    "userName": "Staff Member",
+    "userEmail": "staff_registered@atoiinfra.com",
+    "action": "REGISTER",
+    "details": "User registered with role USER: Staff Member (staff_registered@atoiinfra.com)",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-31T10:25:31.776"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "ae962c36-cdfa-474d-8002-6b856f044bd4",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "LOGIN",
+    "details": "User logged in to Admin Panel",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-30T13:10:46.862"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "b26e537d-3442-4aaa-b2d6-6187c16436c6",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "UPDATE_USER",
+    "details": "Updated user: Agent Staff Updated (staff_agent_test@atoiinfra.com)",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-31T10:46:00.274"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "b896ad4a-1324-43b7-9e69-f316db8036f4",
+  "fields": {
+    "userId": "c1d82202-16df-40af-92eb-516d89d04e1e",
+    "userName": "Sam",
+    "userEmail": "sam@gmail.com",
+    "action": "LOGIN",
+    "details": "User logged in to Admin Panel",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-31T10:08:34.316"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "b8a63558-4291-491d-8f4d-a06b6f1f0b2f",
+  "fields": {
+    "userId": null,
+    "userName": "Staff Member",
+    "userEmail": "staff_registered@atoiinfra.com",
+    "action": "REGISTER",
+    "details": "User registered with role USER: Staff Member (staff_registered@atoiinfra.com)",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-31T10:26:10.078"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "b93d02f6-1698-4aaf-94b6-03b21bd3ae2b",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "DELETE_USER",
+    "details": "Deleted user: Agent Staff Updated (staff_agent_test@atoiinfra.com)",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-31T10:46:00.303"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "b9671b6f-5273-4a54-9d0a-ca39e824c1a5",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "DELETE_USER",
+    "details": "Deleted user: Agent Staff Updated (staff_agent_test@atoiinfra.com)",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-31T10:26:11.363"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "ba7d97cf-ac8e-4ca0-90b5-7954f809b321",
+  "fields": {
+    "userId": "c1d82202-16df-40af-92eb-516d89d04e1e",
+    "userName": "Sam",
+    "userEmail": "sam@gmail.com",
+    "action": "LOGIN",
+    "details": "User logged in to Admin Panel",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-30T16:04:20.829"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "bc343795-13b2-4c6c-85ea-0683f9fffdc4",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "LOGIN",
+    "details": "User logged in to Admin Panel",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-11-02T05:45:47.946"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "bdb9472f-fb26-4e48-a6b5-8bab03a23c25",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "LOGIN",
+    "details": "User logged in to Admin Panel",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-30T13:13:48.934"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "c02de3f1-ca29-41a2-8c04-df34ce019a34",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "DELETE_USER",
+    "details": "Deleted user: Agent Staff Updated (staff_agent_test@atoiinfra.com)",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-11-05T16:13:23.986"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "c202ee1e-e231-4d04-b997-e21e59f81ace",
+  "fields": {
+    "userId": "c1d82202-16df-40af-92eb-516d89d04e1e",
+    "userName": "Sam",
+    "userEmail": "sam@gmail.com",
+    "action": "LOGIN",
+    "details": "User logged in to Admin Panel",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-30T14:40:48.251"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "c2a2a6c6-b2ba-459c-86b7-ad732002ec46",
+  "fields": {
+    "userId": "25f4c73f-7694-4b55-a390-26c2c71f201f",
+    "userName": "Alex",
+    "userEmail": "alex@gmail.com",
+    "action": "LOGIN",
+    "details": "User logged in to Admin Panel",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-09-25T15:04:57.236"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "c6353815-b536-4f25-b884-52b6616e5d26",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "LOGIN",
+    "details": "User logged in to Admin Panel",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-14T12:16:32.153"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "c6b02601-e8c8-4d63-9e89-1af86345b746",
+  "fields": {
+    "userId": "c1d82202-16df-40af-92eb-516d89d04e1e",
+    "userName": "Sam",
+    "userEmail": "sam@gmail.com",
+    "action": "LOGIN",
+    "details": "User logged in to Admin Panel",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-11-02T14:35:24.642"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "c71865c4-08a9-484e-8206-adbdeecfe714",
+  "fields": {
+    "userId": "c1d82202-16df-40af-92eb-516d89d04e1e",
+    "userName": "Sam",
+    "userEmail": "sam@gmail.com",
+    "action": "LOGIN",
+    "details": "User logged in to Admin Panel",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-30T14:19:11.350"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "c76e747a-cf5c-422e-bcca-0a777cd72efd",
+  "fields": {
+    "userId": null,
+    "userName": "Bootstrap Super Admin",
+    "userEmail": "bootstrap_admin@atoiinfra.com",
+    "action": "REGISTER",
+    "details": "User registered with role ADMIN: Bootstrap Super Admin (bootstrap_admin@atoiinfra.com)",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-30T15:54:40.150"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "c84a554c-1451-482f-b814-0e713359737d",
+  "fields": {
+    "userId": null,
+    "userName": "Staff Member",
+    "userEmail": "staff_registered@atoiinfra.com",
+    "action": "REGISTER",
+    "details": "User registered with role USER: Staff Member (staff_registered@atoiinfra.com)",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-30T15:53:39.073"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "c96c0d33-f19c-46ff-b824-4dc4aa9d708d",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "LOGIN",
+    "details": "User logged in to Admin Panel",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-30T14:40:02.443"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "c9c9bf7b-6717-4655-9261-4e57ab268c59",
+  "fields": {
+    "userId": null,
+    "userName": "Bootstrap Super Admin",
+    "userEmail": "bootstrap_admin@atoiinfra.com",
+    "action": "REGISTER",
+    "details": "User registered with role ADMIN: Bootstrap Super Admin (bootstrap_admin@atoiinfra.com)",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-31T10:25:32.068"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "cc074172-32f8-46eb-9854-40f87031ae78",
+  "fields": {
+    "userId": "c1d82202-16df-40af-92eb-516d89d04e1e",
+    "userName": "Sam",
+    "userEmail": "sam@gmail.com",
+    "action": "LOGIN",
+    "details": "User logged in to Admin Panel",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-09-25T15:10:52.736"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "cd9da961-e09f-454e-abf7-17ce2943021e",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "DELETE_USER",
+    "details": "Deleted user: Agent Staff Updated (staff_agent_test@atoiinfra.com)",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-11-03T08:32:57.625"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "ceca9a51-94f2-4799-a7c9-9709c2d4c19e",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "UPDATE_USER",
+    "details": "Updated user: Agent Staff Updated (staff_agent_test@atoiinfra.com)",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-30T15:53:39.295"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "d111d4d1-a80b-4889-858b-cc8cf7beaa6d",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "DELETE_USER",
+    "details": "Deleted user: Agent Staff Updated (staff_agent_test@atoiinfra.com)",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-31T11:11:36.594"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "d2b10d40-0eee-404d-bcc2-5b9bb810f1fa",
+  "fields": {
+    "userId": "c1d82202-16df-40af-92eb-516d89d04e1e",
+    "userName": "Sam",
+    "userEmail": "sam@gmail.com",
+    "action": "LOGIN",
+    "details": "User logged in to Admin Panel",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-11-05T10:41:43.324"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "d3599cfa-6f7a-42ca-b154-90543057eacb",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "UPDATE_USER",
+    "details": "Updated user: Agent Staff Updated (staff_agent_test@atoiinfra.com)",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-31T11:11:36.575"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "d4710bf8-ad73-4a09-8064-6f6e9a70f8bd",
+  "fields": {
+    "userId": null,
+    "userName": "Staff Member",
+    "userEmail": "staff_registered@atoiinfra.com",
+    "action": "REGISTER",
+    "details": "User registered with role USER: Staff Member (staff_registered@atoiinfra.com)",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-31T10:25:02.917"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "d67dcb21-77e5-498b-8ec4-f523e349414d",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "CREATE_USER",
+    "details": "Created new user: Agent Staff (staff_agent_test@atoiinfra.com) with role USER",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-31T10:25:32.383"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "d77567e5-3225-4e12-b66c-cd440aa8ca9d",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "LOGIN",
+    "details": "User logged in to Admin Panel",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-30T13:14:35.238"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "d99506e6-0e68-448d-9b41-14c64b5b1287",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "LOGIN",
+    "details": "User logged in to Admin Panel",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-11-04T07:41:13.273"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "d9f7ea16-184e-4873-ade9-daed3e90b2ab",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "UPDATE_USER",
+    "details": "Updated user: Agent Staff Updated (staff_agent_test@atoiinfra.com)",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-30T15:54:40.349"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "dc2a3fb6-abae-42eb-8fed-945b2c1e3061",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "LOGIN",
+    "details": "User logged in to Admin Panel",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-28T13:22:21.968"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "de46adfb-cb88-43aa-bf67-d75b49130bdc",
+  "fields": {
+    "userId": "c1d82202-16df-40af-92eb-516d89d04e1e",
+    "userName": "Sam",
+    "userEmail": "sam@gmail.com",
+    "action": "LOGIN",
+    "details": "User logged in to Admin Panel",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-30T14:41:46.988"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "e189ffb4-effd-4cdd-a2c2-2e0386e4248e",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "LOGIN",
+    "details": "User logged in to Admin Panel",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-30T07:42:50.900"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "e1fc7e8a-fe79-4aa0-b8d7-41618fb32908",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "LOGIN",
+    "details": "User logged in to Admin Panel",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-30T14:23:15.963"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "e27a9a08-10d0-4208-aeb8-9bf956c44d7d",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "CREATE_USER",
+    "details": "Created new user: Agent Staff (staff_agent_test@atoiinfra.com) with role USER",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-30T15:53:39.278"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "e6583084-cba7-4a13-9052-cf41e68252c2",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "CREATE_USER",
+    "details": "Created new user: Agent Staff (staff_agent_test@atoiinfra.com) with role USER",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-30T15:54:40.336"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "ead69889-5012-4f73-984a-6095bbaf4c86",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "UPDATE_USER",
+    "details": "Updated user: Agent Staff Updated (staff_agent_test@atoiinfra.com)",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-11-05T16:44:36.440"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "ebbd5e50-168a-4d04-a0a8-3c8d171ecbb6",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "LOGIN",
+    "details": "User logged in to Admin Panel",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-30T13:39:32.313"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "f1f36933-1c5d-4813-a1cc-9e482185a4d1",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "UPDATE_USER",
+    "details": "Updated user: Agent Staff Updated (staff_agent_test@atoiinfra.com)",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-11-03T08:32:57.608"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "f51160e3-6614-4b51-b091-8f46401f0ccf",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "DELETE_USER",
+    "details": "Deleted user: Agent Staff Updated (staff_agent_test@atoiinfra.com)",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-11-03T08:34:10.606"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "f6e83ab0-30e6-4be6-9f17-a8ef8cb9211d",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "CREATE_USER",
+    "details": "Created new user: Agent Staff (staff_agent_test@atoiinfra.com) with role USER",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-31T10:31:48.992"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "f764ba88-40ee-418c-a7df-d994620abb86",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "LOGIN",
+    "details": "User logged in to Admin Panel",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-30T13:13:31.642"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "f8ad2948-5864-4511-9b24-2a254246d351",
+  "fields": {
+    "userId": null,
+    "userName": "Bootstrap Super Admin",
+    "userEmail": "bootstrap_admin@atoiinfra.com",
+    "action": "REGISTER",
+    "details": "User registered with role ADMIN: Bootstrap Super Admin (bootstrap_admin@atoiinfra.com)",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-11-05T16:13:23.391"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "f9a05bce-85be-4958-99a9-1d9da09b989a",
+  "fields": {
+    "userId": null,
+    "userName": "Bootstrap Super Admin",
+    "userEmail": "bootstrap_admin@atoiinfra.com",
+    "action": "REGISTER",
+    "details": "User registered with role ADMIN: Bootstrap Super Admin (bootstrap_admin@atoiinfra.com)",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-31T10:31:48.589"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "fc7a218f-4eff-4f0b-9448-2255410c3c14",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "CREATE_USER",
+    "details": "Created new user: Agent Staff (staff_agent_test@atoiinfra.com) with role USER",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-11-03T08:34:10.569"
+  }
+},
+{
+  "model": "api.activitylog",
+  "pk": "fc912c29-d845-460c-9842-900a095e9cca",
+  "fields": {
+    "userId": "95168cb3-2114-4200-8f06-53000c22b807",
+    "userName": "Super Admin",
+    "userEmail": "admin@atoi.com",
+    "action": "CREATE_USER",
+    "details": "Created new user: Agent Staff (staff_agent_test@atoiinfra.com) with role USER",
+    "ipAddress": "127.0.0.1",
+    "createdAt": "2026-10-31T11:11:36.556"
+  }
+},
+{
+  "model": "api.testimonial",
+  "pk": "009789f9-ce45-41a6-a3ee-6930d388d184",
+  "fields": {
+    "clientName": "Rohan Malhotra",
+    "clientRole": "Senior VP, Tech Mahindra",
+    "clientAvatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&h=200&fit=crop",
+    "rating": 5,
+    "quote": "A to I Infra made our property acquisition seamless. Their deep market analysis on Noida Expressway helped us secure a premium 4 BHK with 22% capital gain in 18 months.",
+    "propertyName": "Godrej Woods",
+    "location": "Sector 43, Noida",
+    "isFeatured": true,
+    "status": "Active",
+    "type": "CLIENT",
+    "createdAt": "2026-09-25T14:07:40.167",
+    "updatedAt": "2026-10-30T08:22:01.257"
+  }
+},
+{
+  "model": "api.testimonial",
+  "pk": "03441892-663d-40b7-8fda-04b3a49ac70e",
+  "fields": {
+    "clientName": "Meera Deshmukh",
+    "clientRole": "Luxury Homeowner",
+    "clientAvatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=200&h=200&fit=crop",
+    "rating": 5,
+    "quote": "Absolute luxury experience. The private site tours were extremely well organized. Their knowledge of premium micro-markets is unmatched.",
+    "propertyName": "Penthouse, ATS Pristine",
+    "location": "Sector 150, Noida",
+    "isFeatured": true,
+    "status": "Active",
+    "type": "CLIENT",
+    "createdAt": "2026-09-28T11:49:42.293",
+    "updatedAt": "2026-09-28T11:49:42.293"
+  }
+},
+{
+  "model": "api.testimonial",
+  "pk": "0eacced6-0343-4926-8fd4-c2515b47bec8",
+  "fields": {
+    "clientName": "Meera & Rajesh Singhania",
+    "clientRole": "NRI Investors (Dubai)",
+    "clientAvatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop",
+    "rating": 5,
+    "quote": "Investing in Indian real estate from abroad was always daunting until we met the A to I Infra team. Zero brokerage, transparent documentation, and end-to-end tenant placement.",
+    "propertyName": "Prestige Falcon City",
+    "location": "Bangalore",
+    "isFeatured": true,
+    "status": "Active",
+    "type": "CLIENT",
+    "createdAt": "2026-09-25T14:07:40.167",
+    "updatedAt": "2026-09-25T14:07:40.167"
+  }
+},
+{
+  "model": "api.testimonial",
+  "pk": "16747f49-7165-4872-aceb-eca82446f47c",
+  "fields": {
+    "clientName": "Aditi Roy",
+    "clientRole": "Senior Software Engineer",
+    "clientAvatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100&auto=format&fit=crop&q=80",
+    "rating": 5,
+    "quote": "A to I Infra respects tech innovation. We are building products that redefine real estate search, utilizing cutting-edge Next.js architecture.",
+    "propertyName": null,
+    "location": null,
+    "isFeatured": true,
+    "status": "Active",
+    "type": "EMPLOYEE",
+    "createdAt": "2026-09-28T12:28:16.312",
+    "updatedAt": "2026-09-28T12:28:16.312"
+  }
+},
+{
+  "model": "api.testimonial",
+  "pk": "210b033d-bef3-4ae6-916a-297bf1b227d5",
+  "fields": {
+    "clientName": "Nikhil Chawla",
+    "clientRole": "Commercial Portfolio Manager",
+    "clientAvatar": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=200&h=200&fit=crop",
+    "rating": 5,
+    "quote": "Highly professional team. They helped us select a pre-leased space with an MNC tenant, offering immediate rental yields of 7.5% per annum.",
+    "propertyName": "Pre-Leased Office, Sector 62",
+    "location": "Noida",
+    "isFeatured": false,
+    "status": "Active",
+    "type": "CLIENT",
+    "createdAt": "2026-09-28T11:49:42.472",
+    "updatedAt": "2026-09-28T11:49:42.472"
+  }
+},
+{
+  "model": "api.testimonial",
+  "pk": "2d25d0e7-acb2-4b1e-a2d2-86f12226ace9",
+  "fields": {
+    "clientName": "Vikram Malhotra",
+    "clientRole": "Associate Director (Sales)",
+    "clientAvatar": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=100&auto=format&fit=crop&q=80",
+    "rating": 5,
+    "quote": "Working here has been transformative. The commission structure is highly rewarding, and leadership genuinely invests in your growth path.",
+    "propertyName": null,
+    "location": null,
+    "isFeatured": true,
+    "status": "Active",
+    "type": "EMPLOYEE",
+    "createdAt": "2026-09-28T12:28:16.264",
+    "updatedAt": "2026-09-28T12:28:16.264"
+  }
+},
+{
+  "model": "api.testimonial",
+  "pk": "4ce622e2-205a-4765-b50b-ace4b96de41c",
+  "fields": {
+    "clientName": "Rajesh Malhotra",
+    "clientRole": "Luxury Real Estate Investor",
+    "clientAvatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop",
+    "rating": 5,
+    "quote": "Exceeded all expectations! The team mapped properties according to our budget and negotiated a fantastic rate. Truly professional service from start to finish.",
+    "propertyName": "3 BHK, M3M Gulf Estate",
+    "location": "Sector 65, Gurugram",
+    "isFeatured": false,
+    "status": "Active",
+    "type": "CLIENT",
+    "createdAt": "2026-09-28T11:49:42.320",
+    "updatedAt": "2026-09-28T11:49:42.320"
+  }
+},
+{
+  "model": "api.testimonial",
+  "pk": "58c0bf96-fc3c-4dee-8f77-e9c5fa0624b7",
+  "fields": {
+    "clientName": "Priyanka Sen",
+    "clientRole": "First-time Homeowner",
+    "clientAvatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200&h=200&fit=crop",
+    "rating": 5,
+    "quote": "Very transparent transaction. No hidden costs. They walked us through the RERA portals and legal paperwork patiently. Highly recommended for first-time buyers.",
+    "propertyName": "2 BHK, Ace Divino",
+    "location": "Greater Noida West",
+    "isFeatured": false,
+    "status": "Active",
+    "type": "CLIENT",
+    "createdAt": "2026-09-28T11:49:42.328",
+    "updatedAt": "2026-09-28T11:49:42.328"
+  }
+},
+{
+  "model": "api.testimonial",
+  "pk": "71e0959d-3e7a-4f32-920f-9d5538fbec88",
+  "fields": {
+    "clientName": "Swati Gupta",
+    "clientRole": "Homeowner",
+    "clientAvatar": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=200&h=200&fit=crop",
+    "rating": 5,
+    "quote": "Excellent response time. We got the exact unit we wanted overlooking the central forest green. Great relationship with top developer teams.",
+    "propertyName": "3 BHK, Godrej Woods",
+    "location": "Sector 43, Noida",
+    "isFeatured": false,
+    "status": "Active",
+    "type": "CLIENT",
+    "createdAt": "2026-09-28T11:49:42.495",
+    "updatedAt": "2026-09-28T11:49:42.495"
+  }
+},
+{
+  "model": "api.testimonial",
+  "pk": "73f3a6b9-aafd-4304-b86a-fd70cf0e9749",
+  "fields": {
+    "clientName": "Sneha Wadkar",
+    "clientRole": "HR Executive",
+    "clientAvatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&auto=format&fit=crop&q=80",
+    "rating": 5,
+    "quote": "What I love about A to I is the transparent culture. There is no bureaucracy — you have direct access to founders to pitch suggestions.",
+    "propertyName": null,
+    "location": null,
+    "isFeatured": false,
+    "status": "Active",
+    "type": "EMPLOYEE",
+    "createdAt": "2026-09-28T12:28:16.331",
+    "updatedAt": "2026-09-28T12:28:16.331"
+  }
+},
+{
+  "model": "api.testimonial",
+  "pk": "7b890b77-72c0-480b-bbfc-5f4ca654df0d",
+  "fields": {
+    "clientName": "Kriti Handa",
+    "clientRole": "NRI Investor",
+    "clientAvatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&h=200&fit=crop",
+    "rating": 5,
+    "quote": "Elegant process. Their advisors are polite, experienced, and respect our privacy. Handled NRI documentation flawlessly via power of attorney.",
+    "propertyName": "4 BHK, DLF Camellias",
+    "location": "Golf Course Road, Gurugram",
+    "isFeatured": false,
+    "status": "Active",
+    "type": "CLIENT",
+    "createdAt": "2026-09-28T11:49:42.379",
+    "updatedAt": "2026-09-28T11:49:42.379"
+  }
+},
+{
+  "model": "api.testimonial",
+  "pk": "853d8d4c-10bd-4a65-a0b0-ec144cc9e521",
+  "fields": {
+    "clientName": "Rohan Advani",
+    "clientRole": "Retail Business Owner",
+    "clientAvatar": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=200&h=200&fit=crop",
+    "rating": 4,
+    "quote": "Smooth legal documentation and verification checks. They saved us from investing in an unauthorized project. Valuable, trusted advice.",
+    "propertyName": "Retail Shop, Gaur City Mall",
+    "location": "Greater Noida",
+    "isFeatured": false,
+    "status": "Active",
+    "type": "CLIENT",
+    "createdAt": "2026-09-28T11:49:42.347",
+    "updatedAt": "2026-09-28T11:49:42.347"
+  }
+},
+{
+  "model": "api.testimonial",
+  "pk": "8adbff0a-1678-4a3d-8466-e9fafaec0faf",
+  "fields": {
+    "clientName": "Rohan Bakshi",
+    "clientRole": "Junior Consultant",
+    "clientAvatar": "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=100&auto=format&fit=crop&q=80",
+    "rating": 5,
+    "quote": "The energy in this company is contagious. The onboarding training was comprehensive, enabling me to close my first major commercial deal in 30 days.",
+    "propertyName": null,
+    "location": null,
+    "isFeatured": true,
+    "status": "Active",
+    "type": "EMPLOYEE",
+    "createdAt": "2026-09-28T12:28:16.317",
+    "updatedAt": "2026-09-28T12:28:16.317"
+  }
+},
+{
+  "model": "api.testimonial",
+  "pk": "a880ed3b-12a5-48a9-b7e2-964b278292a0",
+  "fields": {
+    "clientName": "Sameer Verma",
+    "clientRole": "Land & Plotted Investor",
+    "clientAvatar": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=200&h=200&fit=crop",
+    "rating": 5,
+    "quote": "Bought a plot near the Jewar Airport zone. Prices have already appreciated 25%. A to I Infra guided us to buy at the perfect time before the major surge.",
+    "propertyName": "Plots, Yamuna Expressway",
+    "location": "Greater Noida",
+    "isFeatured": false,
+    "status": "Active",
+    "type": "CLIENT",
+    "createdAt": "2026-09-28T11:49:42.407",
+    "updatedAt": "2026-09-28T11:49:42.407"
+  }
+},
+{
+  "model": "api.testimonial",
+  "pk": "c2cfe798-d62f-4b03-bca1-fb96afe58b72",
+  "fields": {
+    "clientName": "Divya Nair",
+    "clientRole": "Luxury Villa Buyer",
+    "clientAvatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&h=200&fit=crop",
+    "rating": 5,
+    "quote": "Stunning property and stellar consultancy. Their structural insight and comparison matrices helped us pick Experion over Gurugram projects.",
+    "propertyName": "3 BHK, Experion Windchants",
+    "location": "Sector 112, Gurugram",
+    "isFeatured": false,
+    "status": "Active",
+    "type": "CLIENT",
+    "createdAt": "2026-09-28T11:49:42.427",
+    "updatedAt": "2026-09-28T11:49:42.427"
+  }
+},
+{
+  "model": "api.testimonial",
+  "pk": "d2e5720d-5a09-45d3-a822-2432f8b9bbba",
+  "fields": {
+    "clientName": "Meenakshi Joshi",
+    "clientRole": "VP Client Relations",
+    "clientAvatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&auto=format&fit=crop&q=80",
+    "rating": 5,
+    "quote": "We don't just sell; we consult. The focus on customer satisfaction changes the whole dynamic. It makes you proud of where you work.",
+    "propertyName": null,
+    "location": null,
+    "isFeatured": false,
+    "status": "Active",
+    "type": "EMPLOYEE",
+    "createdAt": "2026-09-28T12:28:16.357",
+    "updatedAt": "2026-09-28T12:28:16.357"
+  }
+},
+{
+  "model": "api.testimonial",
+  "pk": "d764eebe-83e1-44bf-9cee-58bceb1937e8",
+  "fields": {
+    "clientName": "Adv. G.S. Chahal",
+    "clientRole": "Legal Consultant",
+    "clientAvatar": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&auto=format&fit=crop&q=80",
+    "rating": 5,
+    "quote": "The balance between client service and training is fantastic. We are regularly updated on RERA compliance policies by our legal team.",
+    "propertyName": null,
+    "location": null,
+    "isFeatured": false,
+    "status": "Active",
+    "type": "EMPLOYEE",
+    "createdAt": "2026-09-28T12:28:16.346",
+    "updatedAt": "2026-09-28T12:28:16.346"
+  }
+},
+{
+  "model": "api.testimonial",
+  "pk": "d7e66173-0780-4d64-a879-32a43313c02b",
+  "fields": {
+    "clientName": "Anil Wadhwa",
+    "clientRole": "Resident Buyer",
+    "clientAvatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&h=200&fit=crop",
+    "rating": 5,
+    "quote": "A highly reliable consultancy. They assisted with my home loan from SBI at an excellent interest rate. The post-purchase customer success team is outstanding.",
+    "propertyName": "3 BHK, Mahagun Moderne",
+    "location": "Sector 78, Noida",
+    "isFeatured": true,
+    "status": "Active",
+    "type": "CLIENT",
+    "createdAt": "2026-09-28T11:49:42.304",
+    "updatedAt": "2026-11-04T07:47:31.809"
+  }
+},
+{
+  "model": "api.testimonial",
+  "pk": "dad16e4b-03b1-4206-bad1-8886af2dc7be",
+  "fields": {
+    "clientName": "Sanjay Singhal",
+    "clientRole": "Commercial Investor",
+    "clientAvatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop",
+    "rating": 5,
+    "quote": "A to I Infra has the best portfolio of commercial properties. The rental returns on our pre-leased property have been consistent and exactly as projected.",
+    "propertyName": "Office Space, Spectrum Metro",
+    "location": "Sector 75, Noida",
+    "isFeatured": true,
+    "status": "Active",
+    "type": "CLIENT",
+    "createdAt": "2026-09-28T11:49:42.225",
+    "updatedAt": "2026-09-28T11:49:42.225"
+  }
+},
+{
+  "model": "api.testimonial",
+  "pk": "eae50987-2155-462c-9190-4b692f3eb042",
+  "fields": {
+    "clientName": "Tarun Kapoor",
+    "clientRole": "Commercial SCO Investor",
+    "clientAvatar": "https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?w=200&h=200&fit=crop",
+    "rating": 4,
+    "quote": "Strong commercial foresight. The location they suggested is receiving heavy commercial footfall now. Very happy with the long-term appreciation.",
+    "propertyName": "SCO Space, Yamuna Expressway",
+    "location": "Yamuna Expressway",
+    "isFeatured": false,
+    "status": "Active",
+    "type": "CLIENT",
+    "createdAt": "2026-09-28T11:49:42.510",
+    "updatedAt": "2026-09-28T11:49:42.510"
+  }
+},
+{
+  "model": "api.propertysubmission",
+  "pk": "9ce438b7-ae1d-4605-9b9f-9b59137f27a7",
+  "fields": {
+    "ownerName": "Frontend Integration Test",
+    "ownerEmail": "testowner@example.com",
+    "ownerPhone": "+919876543210",
+    "propertyType": "Residential",
+    "purpose": "Sell",
+    "city": null,
+    "location": "Noida Sector 62",
+    "expectedPrice": "? 1.8 Cr",
+    "areaSqFt": null,
+    "description": "Submitted from frontend property registration form test",
+    "status": "Verified",
+    "notes": "Test verified",
+    "assignedTo": null,
+    "createdAt": "2026-09-25T14:26:20.338",
+    "updatedAt": "2026-10-30T08:10:41.988"
+  }
+},
+{
+  "model": "api.propertysubmission",
+  "pk": "a9f7a95e-0445-42b4-b912-091bd1393a5d",
+  "fields": {
+    "ownerName": "Sunita Reddy",
+    "ownerEmail": "sunita.reddy@example.com",
+    "ownerPhone": "+919944556677",
+    "propertyType": "Commercial",
+    "purpose": "Lease",
+    "city": "Bangalore",
+    "location": "Whitefield Main Road",
+    "expectedPrice": "₹ 3.5 Lakhs / month",
+    "areaSqFt": "4500 sq.ft",
+    "description": "Fully furnished Grade A office floor ready for IT/Fintech company with 60 workstations.",
+    "status": "Verified",
+    "notes": "Inspection completed on 24th Sep. Clear commercial zoning.",
+    "assignedTo": "New Admin",
+    "createdAt": "2026-09-25T14:07:40.256",
+    "updatedAt": "2026-09-25T14:07:40.256"
+  }
+},
+{
+  "model": "api.propertysubmission",
+  "pk": "c6a9a6eb-8006-401b-930f-b00ee01bea3b",
+  "fields": {
+    "ownerName": "Amitabh Sen",
+    "ownerEmail": "amitabh.sen@example.com",
+    "ownerPhone": "+919811223344",
+    "propertyType": "Residential",
+    "purpose": "Sell",
+    "city": "Bangalore",
+    "location": "Indiranagar 100ft Road",
+    "expectedPrice": "₹ 3.8 Cr",
+    "areaSqFt": "2600 sq.ft",
+    "description": "Corner plot penthouse with private terrace and 2 basement car parking slots.",
+    "status": "Pending_Review",
+    "notes": "Owner requested a site visit on Saturday.",
+    "assignedTo": "New Admin",
+    "createdAt": "2026-09-25T14:07:40.256",
+    "updatedAt": "2026-09-25T14:07:40.256"
+  }
+}
+]
