@@ -49,6 +49,9 @@ class SeedDataView(views.APIView):
         out = io.StringIO()
         err = io.StringIO()
         try:
+            # Delete auto-created admin with conflicting email so fixture loads cleanly
+            User.objects.filter(email='admin@atoi.com').delete()
+
             call_command('loaddata', 'seed_data.json', stdout=out, stderr=err)
             return Response({
                 'status': 'success',
