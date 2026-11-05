@@ -46,6 +46,8 @@ class RunMigrationsView(views.APIView):
         import traceback
         from django.core.management import call_command
         from django.db import connection
+
+        connection.close()
         from .models import (
             User, Developer, Property, Event, Lead, Career,
             JobApplication, Content, Otp, ActivityLog, Testimonial, PropertySubmission
