@@ -50,12 +50,14 @@ export default function EnquiryModal({
     return () => clearInterval(interval);
   }, [step, timer]);
 
+  const apiUrl = (process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000/api/v1").replace(/\/+$/, '');
+
   const handleSendOtp = async (e: React.FormEvent) => {
     e.preventDefault();
     if (phone.length >= 10) {
       setIsSubmitting(true);
       try {
-        const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000/api/v1"}/auth/send-otp`, {
+        const response = await fetch(`${apiUrl}/auth/send-otp`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ phone }),
@@ -84,7 +86,7 @@ export default function EnquiryModal({
       
       try {
         // First verify OTP
-        const otpResponse = await fetch(`${process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000/api/v1"}/auth/verify-otp`, {
+        const otpResponse = await fetch(`${apiUrl}/auth/verify-otp`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ phone, code: otp }),
@@ -100,7 +102,7 @@ export default function EnquiryModal({
 
         // OTP verified successfully, now submit Lead
         trackEvent(source === "Free_Consultation" ? "LOAN_ELIGIBILITY" : "PROPERTY_ENQUIRY");
-        const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000/api/v1"}/leads`, {
+        const response = await fetch(`${apiUrl}/leads`, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({

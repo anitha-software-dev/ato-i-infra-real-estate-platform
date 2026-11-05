@@ -20,7 +20,8 @@ export default function LoginPage() {
   const [isLoading, setIsLoading] = useState(false)
   const [adminExists, setAdminExists] = useState<boolean | null>(true) // default true for security
 
-  const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/api/v1'
+  const rawApiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/api/v1'
+  const API_URL = rawApiUrl.replace(/\/+$/, '')
 
   useEffect(() => {
     const checkSetupStatus = async () => {
@@ -30,8 +31,8 @@ export default function LoginPage() {
           setAdminExists(response.data.data.adminExists)
         }
       } catch (err) {
-        // In case of error, assume admin exists to keep signup link hidden
-        setAdminExists(true)
+        // If error checking setup status, log warning
+        console.warn("Could not check setup-status:", err)
       }
     }
 
@@ -43,7 +44,10 @@ export default function LoginPage() {
     setIsLoading(true)
 
     try {
-      const response = await axios.post(`${API_URL}/auth/login`, { email, password })
+      const response = await axios.post(`${API_URL}/auth/login`, {
+        email: email.trim().toLowerCase(),
+        password
+      })
       
       if (response.data.success) {
         localStorage.setItem("token", response.data.data.token)
@@ -55,7 +59,9 @@ export default function LoginPage() {
       }
     } catch (error: any) {
       if (!error.response) {
-        toast.error("Cannot connect to backend server. Make sure port 5000 is running.")
+        toast.error("Cannot connect to backend server. Please verify backend service is running.")
+      } else if (error.response?.status === 500) {
+        toast.error("Server initializing database. Please wait 10 seconds and try again.")
       } else {
         toast.error(error.response?.data?.message || "Invalid credentials")
       }
@@ -141,9 +147,14 @@ export default function LoginPage() {
                 </Link>
               </div>
             ) : (
-              <div className="text-center text-xs text-muted-foreground pt-3 flex items-center justify-center gap-1.5 border-t border-border/40 mt-2">
-                <ShieldCheck className="w-3.5 h-3.5 text-primary" />
-                <span>Restricted: Admin use only. Authorized personnel only.</span>
+              <div className="flex flex-col items-center gap-2 pt-3 border-t border-border/40 mt-2">
+                <div className="text-center text-xs text-muted-foreground flex items-center justify-center gap-1.5">
+                  <ShieldCheck className="w-3.5 h-3.5 text-primary" />
+                  <span>Restricted: Admin use only. Authorized personnel only.</span>
+                </div>
+                <Link href="/signup" className="text-xs text-muted-foreground/75 hover:text-primary underline transition-colors">
+                  Initial system setup? Register Super Admin
+                </Link>
               </div>
             )}
           </form>

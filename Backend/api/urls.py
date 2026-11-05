@@ -1,7 +1,7 @@
 from django.urls import path, include, re_path
 from rest_framework.routers import SimpleRouter
 from .views import (
-    HealthCheckView, AuthViewSet, UserViewSet, DeveloperViewSet,
+    HealthCheckView, RunMigrationsView, AuthViewSet, UserViewSet, DeveloperViewSet,
     PropertyViewSet, EventViewSet, LeadViewSet, TestimonialViewSet,
     PropertySubmissionViewSet, CareerViewSet, JobApplicationViewSet,
     ContentViewSet, UploadView
@@ -36,27 +36,28 @@ auth_verify_otp = AuthViewSet.as_view({'post': 'verify_otp'})
 urlpatterns = [
     # Root & Health check
     re_path(r'^/?$', HealthCheckView.as_view(), name='api-root'),
-    re_path(r'^health/?$', HealthCheckView.as_view(), name='health'),
+    re_path(r'^/?health/?$', HealthCheckView.as_view(), name='health'),
+    re_path(r'^/?migrate/?$', RunMigrationsView.as_view(), name='api-migrate'),
 
     # Auth routes
-    re_path(r'^auth/login/?$', auth_login, name='auth-login'),
-    re_path(r'^auth/register/?$', auth_register, name='auth-register'),
-    re_path(r'^auth/setup-status/?$', auth_setup_status, name='auth-setup-status'),
-    re_path(r'^auth/profile/?$', auth_profile, name='auth-profile'),
-    re_path(r'^auth/password/?$', auth_password, name='auth-password'),
-    re_path(r'^auth/me/?$', auth_me, name='auth-me'),
-    re_path(r'^auth/send-otp/?$', auth_send_otp, name='auth-send-otp'),
-    re_path(r'^auth/verify-otp/?$', auth_verify_otp, name='auth-verify-otp'),
+    re_path(r'^/?auth/login/?$', auth_login, name='auth-login'),
+    re_path(r'^/?auth/register/?$', auth_register, name='auth-register'),
+    re_path(r'^/?auth/setup-status/?$', auth_setup_status, name='auth-setup-status'),
+    re_path(r'^/?auth/profile/?$', auth_profile, name='auth-profile'),
+    re_path(r'^/?auth/password/?$', auth_password, name='auth-password'),
+    re_path(r'^/?auth/me/?$', auth_me, name='auth-me'),
+    re_path(r'^/?auth/send-otp/?$', auth_send_otp, name='auth-send-otp'),
+    re_path(r'^/?auth/verify-otp/?$', auth_verify_otp, name='auth-verify-otp'),
 
     # Upload routes
-    re_path(r'^upload/image/?$', UploadView.as_view(), {'upload_type': 'image'}, name='upload-image'),
-    re_path(r'^upload/images/?$', UploadView.as_view(), {'upload_type': 'images'}, name='upload-images'),
+    re_path(r'^/?upload/image/?$', UploadView.as_view(), {'upload_type': 'image'}, name='upload-image'),
+    re_path(r'^/?upload/images/?$', UploadView.as_view(), {'upload_type': 'images'}, name='upload-images'),
 
     # Custom action routes with regex to handle both with/without trailing slash
-    re_path(r'^users/activities/?$', UserViewSet.as_view({'get': 'activities'}), name='user-activities'),
-    re_path(r'^leads/(?P<pk>[^/.]+)/status/?$', LeadViewSet.as_view({'put': 'update_status'}), name='lead-update-status'),
-    re_path(r'^property-submissions/(?P<pk>[^/.]+)/convert/?$', PropertySubmissionViewSet.as_view({'post': 'convert'}), name='property-submission-convert'),
-    re_path(r'^job-applications/(?P<pk>[^/.]+)/status/?$', JobApplicationViewSet.as_view({'put': 'update_status'}), name='job-application-update-status'),
+    re_path(r'^/?users/activities/?$', UserViewSet.as_view({'get': 'activities'}), name='user-activities'),
+    re_path(r'^/?leads/(?P<pk>[^/.]+)/status/?$', LeadViewSet.as_view({'put': 'update_status'}), name='lead-update-status'),
+    re_path(r'^/?property-submissions/(?P<pk>[^/.]+)/convert/?$', PropertySubmissionViewSet.as_view({'post': 'convert'}), name='property-submission-convert'),
+    re_path(r'^/?job-applications/(?P<pk>[^/.]+)/status/?$', JobApplicationViewSet.as_view({'put': 'update_status'}), name='job-application-update-status'),
 
     # Router registered ViewSets
     re_path(r'^', include(router.urls)),

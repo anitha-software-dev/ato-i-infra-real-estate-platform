@@ -37,7 +37,8 @@ export default function PropertyRegistrationPage() {
     
     try {
       const finalLocation = formData.location === "Other" && formData.customLocation ? formData.customLocation : formData.location;
-      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000/api/v1"}/property-submissions`, {
+      const apiUrl = (process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000/api/v1").replace(/\/+$/, '');
+      const response = await fetch(`${apiUrl}/property-submissions`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({

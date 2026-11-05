@@ -21,7 +21,7 @@ class User(models.Model):
 
     class Meta:
         db_table = 'User'
-        managed = False
+        managed = True
 
     def __str__(self):
         return f"{self.name} ({self.email})"
@@ -51,7 +51,7 @@ class Developer(models.Model):
 
     class Meta:
         db_table = 'Developer'
-        managed = False
+        managed = True
 
     def __str__(self):
         return self.name
@@ -85,7 +85,7 @@ class Property(models.Model):
 
     class Meta:
         db_table = 'Property'
-        managed = False
+        managed = True
 
     def __str__(self):
         return self.name
@@ -117,7 +117,7 @@ class Event(models.Model):
 
     class Meta:
         db_table = 'Event'
-        managed = False
+        managed = True
 
     def __str__(self):
         return self.title
@@ -158,7 +158,7 @@ class Lead(models.Model):
 
     class Meta:
         db_table = 'Lead'
-        managed = False
+        managed = True
 
     def __str__(self):
         return f"{self.name} ({self.phone})"
@@ -186,7 +186,7 @@ class Career(models.Model):
 
     class Meta:
         db_table = 'Career'
-        managed = False
+        managed = True
 
     def __str__(self):
         return self.title
@@ -213,7 +213,7 @@ class JobApplication(models.Model):
 
     class Meta:
         db_table = 'JobApplication'
-        managed = False
+        managed = True
 
     def __str__(self):
         return f"{self.name} - {self.careerId}"
@@ -238,7 +238,7 @@ class Content(models.Model):
 
     class Meta:
         db_table = 'Content'
-        managed = False
+        managed = True
 
     def __str__(self):
         return self.title
@@ -253,7 +253,7 @@ class Otp(models.Model):
 
     class Meta:
         db_table = 'Otp'
-        managed = False
+        managed = True
 
     def __str__(self):
         return f"OTP for {self.phone}"
@@ -279,7 +279,7 @@ class ActivityLog(models.Model):
 
     class Meta:
         db_table = 'ActivityLog'
-        managed = False
+        managed = True
 
     def __str__(self):
         return f"{self.userName} - {self.action}"
@@ -302,7 +302,7 @@ class Testimonial(models.Model):
 
     class Meta:
         db_table = 'Testimonial'
-        managed = False
+        managed = True
 
     def __str__(self):
         return self.clientName
@@ -328,7 +328,7 @@ class PropertySubmission(models.Model):
 
     class Meta:
         db_table = 'PropertySubmission'
-        managed = False
+        managed = True
 
     def __str__(self):
         return f"{self.ownerName} - {self.location}"

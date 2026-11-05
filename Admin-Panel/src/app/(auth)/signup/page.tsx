@@ -26,7 +26,8 @@ export default function SignUpPage() {
   const [showConfirmPassword, setShowConfirmPassword] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
 
-  const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/api/v1'
+  const rawApiUrl = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/api/v1'
+  const API_URL = rawApiUrl.replace(/\/+$/, '')
 
   useEffect(() => {
     const checkSetupStatus = async () => {
@@ -35,11 +36,12 @@ export default function SignUpPage() {
         if (response.data?.success && response.data?.data) {
           setAdminExists(response.data.data.adminExists)
         } else {
-          setAdminExists(true)
+          setAdminExists(false)
         }
       } catch (err) {
-        // Default to adminExists: true to protect security on error
-        setAdminExists(true)
+        // If error or warming up, allow form view; backend will enforce security on POST
+        console.warn("Setup status check warning:", err)
+        setAdminExists(false)
       } finally {
         setIsCheckingSetup(false)
       }

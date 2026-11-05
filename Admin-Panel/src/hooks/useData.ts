@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback } from 'react';
 import axios from 'axios';
 import { Lead, Property, Developer, Event, Career, Content, JobApplication, AdminUser, ActivityLog, Testimonial, PropertySubmission } from '@/lib/mockData';
 
-export const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/api/v1';
+export const API_URL = (process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/api/v1').replace(/\/+$/, '');
 
 export const api = axios.create({ baseURL: API_URL });
 api.interceptors.request.use((config) => {

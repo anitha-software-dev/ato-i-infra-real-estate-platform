@@ -67,8 +67,11 @@ if DATABASE_URL:
     try:
         import dj_database_url
         clean_db_url = DATABASE_URL.split('?schema=')[0] if '?schema=' in DATABASE_URL else DATABASE_URL
+        parsed_db = dj_database_url.parse(clean_db_url, conn_max_age=600)
+        if 'OPTIONS' in parsed_db and isinstance(parsed_db['OPTIONS'], dict):
+            parsed_db['OPTIONS'].pop('schema', None)
         DATABASES = {
-            'default': dj_database_url.config(default=clean_db_url, conn_max_age=600)
+            'default': parsed_db
         }
     except ImportError:
         DATABASES = {
