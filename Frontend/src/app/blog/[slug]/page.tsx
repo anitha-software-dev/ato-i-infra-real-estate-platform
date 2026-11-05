@@ -28,11 +28,17 @@ function formatPublishDate(dateVal?: string | Date) {
 }
 
 export async function generateStaticParams() {
-  const res = await fetchContent({ type: 'Blog' });
-  const blogsData: any[] = Array.isArray(res) ? res : (res?.data || []);
-  return blogsData.map((blog: any) => ({
-    slug: blog.slug,
-  }));
+  try {
+    const res = await fetchContent({ type: 'Blog' });
+    const blogsData: any[] = Array.isArray(res) ? res : (res?.data || []);
+    return blogsData
+      .filter((blog: any) => blog && typeof blog.slug === 'string' && blog.slug.trim() !== '')
+      .map((blog: any) => ({
+        slug: blog.slug,
+      }));
+  } catch {
+    return [];
+  }
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {

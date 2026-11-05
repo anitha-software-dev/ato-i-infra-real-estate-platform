@@ -7,10 +7,16 @@ import { JobListing, normalizeJob } from '@/lib/careers';
 
 // ─── Static params ─────────────────────────────────────────────────────────────
 export async function generateStaticParams() {
-  const res = await fetchCareers();
-  const rawData = Array.isArray(res) ? res : (res?.data || []);
-  const careersData: JobListing[] = rawData.map(normalizeJob);
-  return careersData.map((job) => ({ slug: job.slug }));
+  try {
+    const res = await fetchCareers();
+    const rawData = Array.isArray(res) ? res : (res?.data || []);
+    const careersData: JobListing[] = rawData.map(normalizeJob);
+    return careersData
+      .filter((job) => job && typeof job.slug === 'string' && job.slug.trim() !== '')
+      .map((job) => ({ slug: job.slug }));
+  } catch {
+    return [];
+  }
 }
 
 // ─── Metadata ──────────────────────────────────────────────────────────────────

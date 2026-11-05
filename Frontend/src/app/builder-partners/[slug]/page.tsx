@@ -6,9 +6,15 @@ import { formatCityName } from "@/lib/cityUtils";
 
 // ─── generateStaticParams ─────────────────────────────────────────────────────
 export async function generateStaticParams() {
-  const res = await fetchDevelopers();
-  const developersData = res.data || res || [];
-  return developersData.map((d: any) => ({ slug: d.slug }));
+  try {
+    const res = await fetchDevelopers();
+    const developersData: any[] = res?.data || res || [];
+    return developersData
+      .filter((d: any) => d && typeof d.slug === 'string' && d.slug.trim() !== '')
+      .map((d: any) => ({ slug: d.slug }));
+  } catch {
+    return [];
+  }
 }
 
 // ─── Metadata ─────────────────────────────────────────────────────────────────
@@ -19,7 +25,7 @@ export async function generateMetadata({
 }) {
   const { slug } = await params;
   const res = await fetchDevelopers();
-  const developersData = res.data || res || [];
+  const developersData: any[] = res?.data || res || [];
   const dev = developersData.find((d: any) => d.slug === slug);
   if (!dev) return {};
   return {
@@ -36,7 +42,7 @@ export default async function DeveloperDetailPage({
 }) {
   const { slug } = await params;
   const res = await fetchDevelopers();
-  const developersData = res.data || res || [];
+  const developersData: any[] = res?.data || res || [];
   const dev = developersData.find((d: any) => d.slug === slug);
   if (!dev) notFound();
 

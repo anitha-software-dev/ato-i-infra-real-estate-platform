@@ -1,81 +1,82 @@
 const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000/api/v1';
 
-export async function fetchProperties(params?: Record<string, string>) {
+async function safeFetch(url: string, init?: RequestInit, fallback: any = { data: [] }): Promise<any> {
+  try {
+    const res = await fetch(url, init);
+    if (!res.ok) {
+      console.warn(`[API] Failed to fetch ${url} (status: ${res.status})`);
+      return fallback;
+    }
+    return await res.json();
+  } catch (error: any) {
+    // When backend is unreachable (e.g., during build time or cold start)
+    console.warn(`[API] Network error fetching ${url}: ${error?.message || error}. Falling back to default data.`);
+    return fallback;
+  }
+}
+
+export async function fetchProperties(params?: Record<string, string>): Promise<any> {
   const url = new URL(`${API_URL}/properties`);
   if (params) {
     Object.keys(params).forEach(key => {
       if (params[key]) url.searchParams.append(key, params[key]);
     });
   }
-  const res = await fetch(url.toString(), { next: { revalidate: 30 } });
-  if (!res.ok) throw new Error('Failed to fetch properties');
-  return res.json();
+  return safeFetch(url.toString(), { next: { revalidate: 30 } }, { data: [] });
 }
 
-export async function fetchPropertyById(id: string) {
-  const res = await fetch(`${API_URL}/properties/${id}`, { next: { revalidate: 30 } });
-  if (!res.ok) throw new Error('Failed to fetch property');
-  return res.json();
+export async function fetchPropertyById(id: string): Promise<any> {
+  return safeFetch(`${API_URL}/properties/${id}`, { next: { revalidate: 30 } }, { data: null });
 }
 
-export async function fetchDevelopers(params?: Record<string, string>) {
+export async function fetchDevelopers(params?: Record<string, string>): Promise<any> {
   const url = new URL(`${API_URL}/developers`);
   if (params) {
     Object.keys(params).forEach(key => {
       if (params[key]) url.searchParams.append(key, params[key]);
     });
   }
-  const res = await fetch(url.toString(), { next: { revalidate: 30 } });
-  if (!res.ok) throw new Error('Failed to fetch developers');
-  return res.json();
+  return safeFetch(url.toString(), { next: { revalidate: 30 } }, { data: [] });
 }
 
-export async function fetchEvents(params?: Record<string, string>) {
+export async function fetchEvents(params?: Record<string, string>): Promise<any> {
   const url = new URL(`${API_URL}/events`);
   if (params) {
     Object.keys(params).forEach(key => {
       if (params[key]) url.searchParams.append(key, params[key]);
     });
   }
-  const res = await fetch(url.toString(), { next: { revalidate: 30 } });
-  if (!res.ok) throw new Error('Failed to fetch events');
-  return res.json();
+  return safeFetch(url.toString(), { next: { revalidate: 30 } }, { data: [] });
 }
 
-export async function fetchCareers(params?: Record<string, string>) {
+export async function fetchCareers(params?: Record<string, string>): Promise<any> {
   const url = new URL(`${API_URL}/careers`);
   if (params) {
     Object.keys(params).forEach(key => {
       if (params[key]) url.searchParams.append(key, params[key]);
     });
   }
-  const res = await fetch(url.toString(), { next: { revalidate: 30 } });
-  if (!res.ok) throw new Error('Failed to fetch careers');
-  return res.json();
+  return safeFetch(url.toString(), { next: { revalidate: 30 } }, { data: [] });
 }
 
-export async function fetchContent(params?: Record<string, string>) {
+export async function fetchContent(params?: Record<string, string>): Promise<any> {
   const url = new URL(`${API_URL}/content`);
   if (params) {
     Object.keys(params).forEach(key => {
       if (params[key]) url.searchParams.append(key, params[key]);
     });
   }
-  const res = await fetch(url.toString(), { next: { revalidate: 30 } });
-  if (!res.ok) throw new Error('Failed to fetch content');
-  return res.json();
+  return safeFetch(url.toString(), { next: { revalidate: 30 } }, { data: [] });
 }
 
-export async function fetchTestimonials(params?: Record<string, string>) {
+export async function fetchTestimonials(params?: Record<string, string>): Promise<any> {
   const url = new URL(`${API_URL}/testimonials`);
   if (params) {
     Object.keys(params).forEach(key => {
       if (params[key]) url.searchParams.append(key, params[key]);
     });
   }
-  const res = await fetch(url.toString(), { next: { revalidate: 30 } });
-  if (!res.ok) throw new Error('Failed to fetch testimonials');
-  return res.json();
+  return safeFetch(url.toString(), { next: { revalidate: 30 } }, { data: [] });
 }
 
 export async function submitLead(data: {
@@ -88,7 +89,7 @@ export async function submitLead(data: {
   interest?: string;
   location?: string;
   budget?: string;
-}) {
+}): Promise<any> {
   const res = await fetch(`${API_URL}/leads`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },

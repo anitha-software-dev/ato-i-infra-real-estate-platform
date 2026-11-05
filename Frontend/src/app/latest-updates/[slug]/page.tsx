@@ -29,10 +29,16 @@ const mapNewsData = (rawData: any[]): NewsArticle[] => {
 
 // ─── Static params ─────────────────────────────────────────────────────────────
 export async function generateStaticParams() {
-  const res = await fetchContent();
-  const rawData = Array.isArray(res) ? res : (res?.data || []);
-  const newsData = mapNewsData(rawData);
-  return newsData.map((article) => ({ slug: article.slug }));
+  try {
+    const res = await fetchContent();
+    const rawData = Array.isArray(res) ? res : (res?.data || []);
+    const newsData = mapNewsData(rawData);
+    return newsData
+      .filter((article) => article && typeof article.slug === 'string' && article.slug.trim() !== '')
+      .map((article) => ({ slug: article.slug }));
+  } catch {
+    return [];
+  }
 }
 
 // ─── Metadata ──────────────────────────────────────────────────────────────────

@@ -6,9 +6,15 @@ import EventDetailClient from './EventDetailClient';
 
 // ─── generateStaticParams ──────────────────────────────────────────────────────
 export async function generateStaticParams() {
-  const res = await fetchEvents();
-  const eventsData = res.data || res || [];
-  return eventsData.map((e: any) => ({ slug: e.slug }));
+  try {
+    const res = await fetchEvents();
+    const eventsData: any[] = res?.data || res || [];
+    return eventsData
+      .filter((e: any) => e && typeof e.slug === 'string' && e.slug.trim() !== '')
+      .map((e: any) => ({ slug: e.slug }));
+  } catch {
+    return [];
+  }
 }
 
 // ─── Metadata ──────────────────────────────────────────────────────────────────
@@ -19,7 +25,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const res = await fetchEvents();
-  const eventsData = res.data || res || [];
+  const eventsData: any[] = res?.data || res || [];
   const event = eventsData.find((e: any) => e.slug === slug);
   if (!event) return {};
   return {
@@ -37,7 +43,7 @@ export async function generateMetadata({
 export default async function EventDetailPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const res = await fetchEvents();
-  const eventsData = res.data || res || [];
+  const eventsData: any[] = res?.data || res || [];
   const event = eventsData.find((e: any) => e.slug === slug);
   if (!event) notFound();
 
