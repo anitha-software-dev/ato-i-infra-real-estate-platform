@@ -1,7 +1,7 @@
 from django.urls import path, include, re_path
 from rest_framework.routers import SimpleRouter
 from .views import (
-    HealthCheckView, RunMigrationsView, AuthViewSet, UserViewSet, DeveloperViewSet,
+    HealthCheckView, AuthViewSet, UserViewSet, DeveloperViewSet,
     PropertyViewSet, EventViewSet, LeadViewSet, TestimonialViewSet,
     PropertySubmissionViewSet, CareerViewSet, JobApplicationViewSet,
     ContentViewSet, UploadView
@@ -37,7 +37,6 @@ urlpatterns = [
     # Root & Health check
     re_path(r'^/?$', HealthCheckView.as_view(), name='api-root'),
     re_path(r'^/?health/?$', HealthCheckView.as_view(), name='health'),
-    re_path(r'^/?migrate/?$', RunMigrationsView.as_view(), name='api-migrate'),
 
     # Auth routes
     re_path(r'^/?auth/login/?$', auth_login, name='auth-login'),

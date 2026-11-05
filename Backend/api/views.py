@@ -38,62 +38,6 @@ class HealthCheckView(views.APIView):
         return Response({'status': 'ok', 'message': 'API is healthy'})
 
 
-class RunMigrationsView(views.APIView):
-    permission_classes = [AllowAny]
-
-    def get(self, request):
-        import io
-        import traceback
-        from django.core.management import call_command
-        from django.db import connection
-
-        connection.close()
-        from .models import (
-            User, Developer, Property, Event, Lead, Career,
-            JobApplication, Content, Otp, ActivityLog, Testimonial, PropertySubmission
-        )
-
-        models = [
-            User, Developer, Property, Event, Lead, Career,
-            JobApplication, Content, Otp, ActivityLog, Testimonial, PropertySubmission
-        ]
-
-        created = []
-        already_exist = []
-        errors = []
-
-        with connection.schema_editor() as schema_editor:
-            for m in models:
-                try:
-                    schema_editor.create_model(m)
-                    created.append(m._meta.db_table)
-                except Exception as e:
-                    if 'already exists' in str(e).lower():
-                        already_exist.append(m._meta.db_table)
-                    else:
-                        errors.append(f"{m._meta.db_table}: {str(e)}")
-
-        out_show = io.StringIO()
-        err_show = io.StringIO()
-        out_mig = io.StringIO()
-        err_mig = io.StringIO()
-
-        try:
-            call_command('showmigrations', stdout=out_show, stderr=err_show)
-            call_command('migrate', interactive=False, stdout=out_mig, stderr=err_mig)
-        except Exception:
-            pass
-
-        return Response({
-            'status': 'success',
-            'created_tables': created,
-            'already_existing_tables': already_exist,
-            'errors': errors,
-            'showmigrations': out_show.getvalue(),
-            'migrate': out_mig.getvalue()
-        })
-
-
 # ============================================================================
 # Auth Views
 # ============================================================================
@@ -102,6 +46,9 @@ class AuthViewSet(viewsets.ViewSet):
 
     @action(detail=False, methods=['post'], url_path='login')
     def login(self, request):
+        from django.db import close_old_connections
+        close_old_connections()
+
         email = (request.data.get('email') or '').strip().lower()
         password = request.data.get('password')
 
@@ -111,15 +58,7 @@ class AuthViewSet(viewsets.ViewSet):
                 status=status.HTTP_400_BAD_REQUEST
             )
 
-        try:
-            user = User.objects.filter(email__iexact=email).first()
-        except Exception:
-            try:
-                from django.core.management import call_command
-                call_command('migrate', interactive=False)
-                user = User.objects.filter(email__iexact=email).first()
-            except Exception:
-                user = None
+        user = User.objects.filter(email__iexact=email).first()
 
         if not user:
             # Self-healing: If no admin exists in the system and credentials match default admin, bootstrap it!
@@ -133,6 +72,8 @@ class AuthViewSet(viewsets.ViewSet):
                             role='ADMIN',
                             status='Active'
                         )
+                except Exception:
+                    pass
                 except Exception:
                     pass
 
@@ -184,16 +125,10 @@ class AuthViewSet(viewsets.ViewSet):
 
     @action(detail=False, methods=['get'], url_path='setup-status')
     def setup_status(self, request):
-        try:
-            admin_exists = User.objects.filter(role='ADMIN').exists()
-        except Exception:
-            try:
-                from django.core.management import call_command
-                call_command('migrate', interactive=False)
-                admin_exists = User.objects.filter(role='ADMIN').exists()
-            except Exception:
-                admin_exists = False
+        from django.db import close_old_connections
+        close_old_connections()
 
+        admin_exists = User.objects.filter(role='ADMIN').exists()
         return Response({
             'success': True,
             'data': {
@@ -205,18 +140,9 @@ class AuthViewSet(viewsets.ViewSet):
 
     @action(detail=False, methods=['post'], url_path='register')
     def register(self, request):
-        try:
-            from django.core.management import call_command
-            if not User.objects.exists():
-                pass
-        except Exception:
-            try:
-                from django.core.management import call_command
-                call_command('migrate', interactive=False)
-            except Exception:
-                pass
+        from django.db import close_old_connections, transaction
+        close_old_connections()
 
-        from django.db import transaction
         with transaction.atomic():
             admin_exists = User.objects.filter(role='ADMIN').exists()
             if admin_exists:

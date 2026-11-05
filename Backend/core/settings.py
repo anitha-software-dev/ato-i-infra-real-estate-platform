@@ -33,6 +33,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
+    'api.middleware.DatabaseConnectionMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -71,6 +72,8 @@ if DATABASE_URL:
         parsed_db = dj_database_url.parse(clean_db_url, conn_max_age=0, ssl_require=is_cloud_db)
         if 'OPTIONS' in parsed_db and isinstance(parsed_db['OPTIONS'], dict):
             parsed_db['OPTIONS'].pop('schema', None)
+        parsed_db['CONN_MAX_AGE'] = 0
+        parsed_db['CONN_HEALTH_CHECKS'] = True
         DATABASES = {
             'default': parsed_db
         }
