@@ -1,0 +1,12 @@
+{
+  "name": "atoi-infra-platform",
+  "version": "1.0.0",
+  "description": "A to I Infra - Real Estate Platform (Next.js Frontend, Admin Panel & Django REST Framework Backend)",
+  "scripts": {
+    "dev:backend": "cd Backend && python manage.py runserver 8000",
+    "dev:backend:5000": "cd Backend && python manage.py runserver 5000",
+    "dev:django": "cd Backend && python manage.py runserver 5000",
+    "dev:admin": "cd Admin-Panel && npm run dev",
+    "dev:frontend": "cd Frontend && npm run dev"
+  }
+}
