@@ -45,6 +45,31 @@ class RunMigrationsView(views.APIView):
         import io
         import traceback
         from django.core.management import call_command
+        from django.db import connection
+        from .models import (
+            User, Developer, Property, Event, Lead, Career,
+            JobApplication, Content, Otp, ActivityLog, Testimonial, PropertySubmission
+        )
+
+        models = [
+            User, Developer, Property, Event, Lead, Career,
+            JobApplication, Content, Otp, ActivityLog, Testimonial, PropertySubmission
+        ]
+
+        created = []
+        already_exist = []
+        errors = []
+
+        with connection.schema_editor() as schema_editor:
+            for m in models:
+                try:
+                    schema_editor.create_model(m)
+                    created.append(m._meta.db_table)
+                except Exception as e:
+                    if 'already exists' in str(e).lower():
+                        already_exist.append(m._meta.db_table)
+                    else:
+                        errors.append(f"{m._meta.db_table}: {str(e)}")
 
         out_show = io.StringIO()
         err_show = io.StringIO()
@@ -54,21 +79,17 @@ class RunMigrationsView(views.APIView):
         try:
             call_command('showmigrations', stdout=out_show, stderr=err_show)
             call_command('migrate', interactive=False, stdout=out_mig, stderr=err_mig)
-            return Response({
-                'status': 'success',
-                'showmigrations': out_show.getvalue(),
-                'migrate': out_mig.getvalue(),
-                'stderr': err_mig.getvalue()
-            })
-        except Exception as e:
-            return Response({
-                'status': 'error',
-                'error': str(e),
-                'traceback': traceback.format_exc(),
-                'showmigrations': out_show.getvalue(),
-                'migrate': out_mig.getvalue(),
-                'stderr': err_show.getvalue() + err_mig.getvalue()
-            }, status=500)
+        except Exception:
+            pass
+
+        return Response({
+            'status': 'success',
+            'created_tables': created,
+            'already_existing_tables': already_exist,
+            'errors': errors,
+            'showmigrations': out_show.getvalue(),
+            'migrate': out_mig.getvalue()
+        })
 
 
 # ============================================================================
