@@ -38,6 +38,42 @@ class HealthCheckView(views.APIView):
         return Response({'status': 'ok', 'message': 'API is healthy'})
 
 
+class SeedDataView(views.APIView):
+    permission_classes = [AllowAny]
+
+    def get(self, request):
+        import io
+        from django.core.management import call_command
+        from .models import Property, Developer, Event, Lead, Testimonial, Career, Content, User
+
+        out = io.StringIO()
+        err = io.StringIO()
+        try:
+            call_command('loaddata', 'seed_data.json', stdout=out, stderr=err)
+            return Response({
+                'status': 'success',
+                'message': 'Seed data loaded successfully',
+                'counts': {
+                    'properties': Property.objects.count(),
+                    'developers': Developer.objects.count(),
+                    'events': Event.objects.count(),
+                    'content': Content.objects.count(),
+                    'careers': Career.objects.count(),
+                    'testimonials': Testimonial.objects.count(),
+                    'leads': Lead.objects.count(),
+                    'users': User.objects.count(),
+                },
+                'stdout': out.getvalue(),
+                'stderr': err.getvalue()
+            })
+        except Exception as e:
+            return Response({
+                'status': 'error',
+                'message': str(e),
+                'stderr': err.getvalue()
+            }, status=500)
+
+
 # ============================================================================
 # Auth Views
 # ============================================================================
