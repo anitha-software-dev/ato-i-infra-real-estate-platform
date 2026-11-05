@@ -34,7 +34,8 @@ auth_send_otp = AuthViewSet.as_view({'post': 'send_otp'})
 auth_verify_otp = AuthViewSet.as_view({'post': 'verify_otp'})
 
 urlpatterns = [
-    # Health check
+    # Root & Health check
+    re_path(r'^/?$', HealthCheckView.as_view(), name='api-root'),
     re_path(r'^health/?$', HealthCheckView.as_view(), name='health'),
 
     # Auth routes
