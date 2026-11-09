@@ -10,6 +10,16 @@ A comprehensive PropTech marketplace and customer relationship management (CRM) 
 
 ---
 
+## 🚀 Live Demos
+
+| Service | Live Demo Link | Description |
+|---|---|---|
+| 🌐 **Customer Website** | [ato-i-infra-frontend.vercel.app](https://ato-i-infra-frontend.vercel.app/) | Public real estate discovery portal |
+| 🛡️ **Admin CRM Dashboard** | [ato-i-infra-admin-panel.vercel.app](https://ato-i-infra-admin-panel.vercel.app/) | Agent & property management dashboard |
+| ⚙️ **Backend REST API** | [atoi-infra-backend.onrender.com/api/v1](https://atoi-infra-backend.onrender.com/api/v1) | Django REST Framework API service |
+
+---
+
 ## 🌟 Architecture & Component Overview
 
 ```
